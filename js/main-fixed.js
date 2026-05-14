@@ -98,9 +98,10 @@ function initNavbar() {
   // Mobile menu toggle
   if (navbarToggle && navbarMenu) {
     navbarToggle.addEventListener('click', () => {
+      const isOpen = navbarToggle.classList.contains('active');
       navbarToggle.classList.toggle('active');
       navbarMenu.classList.toggle('active');
-      document.body.style.overflow = navbarMenu.classList.contains('active') ? 'hidden' : '';
+      document.body.style.overflow = !isOpen ? 'hidden' : '';
     });
     
     // Close menu when clicking links
@@ -120,11 +121,59 @@ function initNavbar() {
       const linkPath = link.getAttribute('href');
       if (linkPath === currentPath) {
         link.classList.add('active');
+      } else {
+        link.classList.remove('active');
       }
     });
   };
   
   setActiveLink();
+}
+
+// ===== SMOOTH PAGE TRANSITIONS =====
+function initPageTransitions() {
+  const secondaryLoader = $('.secondary-loader');
+  const navLinks = $$('a:not([target="_blank"]):not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"])');
+
+  if (!secondaryLoader) return;
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || href === window.location.pathname.split('/').pop()) return;
+
+      e.preventDefault();
+      
+      // Show secondary loader
+      secondaryLoader.style.display = 'flex';
+      secondaryLoader.style.visibility = 'visible';
+      secondaryLoader.style.opacity = '1';
+      
+      const progress = secondaryLoader.querySelector('.secondary-loader-progress');
+      if (progress) {
+        progress.style.width = '0%';
+        setTimeout(() => {
+          progress.style.width = '100%';
+        }, 50);
+      }
+
+      // Navigate after transition delay
+      setTimeout(() => {
+        window.location.href = href;
+      }, 600);
+    });
+  });
+
+  // Handle entry animation
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      secondaryLoader.style.opacity = '0';
+      setTimeout(() => {
+        secondaryLoader.style.display = 'none';
+        secondaryLoader.style.visibility = 'hidden';
+      }, 500);
+    }, 300);
+  });
 }
 
 // ===== SIMPLIFIED SCROLL REVEAL =====
@@ -316,6 +365,7 @@ function init() {
   // Then initialize other features
   initThemeToggle();
   initNavbar();
+  initPageTransitions();
   initScrollReveal();
   initCounters();
   initSmoothScroll();

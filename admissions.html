@@ -41,27 +41,23 @@
                 <li><a href="index.html" class="navbar-link">Home</a></li>
                 <li><a href="about.html" class="navbar-link">About</a></li>
                 <li><a href="courses.html" class="navbar-link">Courses</a></li>
-                <li><a href="admissions.html" class="navbar-link active">Admissions</a></li>
+                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
                 <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
                 <li><a href="campus.html" class="navbar-link">Campus</a></li>
                 <li><a href="placements.html" class="navbar-link">Placements</a></li>
                 <li><a href="events.html" class="navbar-link">Events</a></li>
                 <li>
-                    <button class="navbar-theme-toggle" aria-label="Toggle theme">
-                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="5"/>
-                            <line x1="12" y1="1" x2="12" y2="3"/>
-                            <line x1="12" y1="21" x2="12" y2="23"/>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                            <line x1="1" y1="12" x2="3" y2="12"/>
-                            <line x1="21" y1="12" x2="23" y2="12"/>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                        </svg>
-                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                        </svg>
+                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                        <div class="theme-switch-track">
+                            <div class="theme-switch-handle">
+                                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                                </svg>
+                                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                                </svg>
+                            </div>
+                        </div>
                     </button>
                 </li>
                 <li><a href="contact.html" class="navbar-cta">Contact</a></li>
@@ -78,7 +74,7 @@
     <main class="page-wrapper">
         
         <!-- Hero Section -->
-        <section style="min-height: 45vh; display: flex; align-items: center; background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">>>
+        <section style="min-height: 45vh; display: flex; align-items: center; background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
                 <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                     <span class="badge reveal">Join Us</span>
@@ -122,7 +118,7 @@
                             <div>
                                 <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Document Verification</h3>
                                 <p style="line-height: var(--leading-relaxed);">
-                                    Our admissions team will review your application and verify all submitted documents. You will be notified of any additional requirements or clarifications needed.
+                                    Our admission committee will verify your submitted documents and eligibility. Original documents must be presented for verification during the final stage of admission.
                                 </p>
                             </div>
                         </div>
@@ -230,199 +226,50 @@
             </div>
         </section>
         
-        <!-- Scholarships -->
-        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+        <footer>
             <div class="container">
-                <div class="section-header">
-                    <span class="section-label reveal">Financial Support</span>
-                    <h2 class="section-title reveal delay-100">Scholarships & Financial Aid</h2>
-                    <div class="divider reveal delay-200"></div>
-                    <p class="section-description reveal delay-300">
-                        We believe financial constraints should never hinder academic aspirations
-                    </p>
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">Bipin Chikkatti College</div>
+                        <div class="footer-tagline">A Legacy of Excellence</div>
+                        <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed);">
+                            Cultivating minds and shaping futures since 1994.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="footer-title">Quick Links</h4>
+                        <div class="footer-links">
+                            <a href="about.html" class="footer-link">About Us</a>
+                            <a href="courses.html" class="footer-link">Academics</a>
+                            <a href="admissions.html" class="footer-link">Admissions</a>
+                            <a href="faculty.html" class="footer-link">Faculty</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="footer-title">Resources</h4>
+                        <div class="footer-links">
+                            <a href="campus.html" class="footer-link">Campus</a>
+                            <a href="placements.html" class="footer-link">Placements</a>
+                            <a href="events.html" class="footer-link">Events</a>
+                            <a href="contact.html" class="footer-link">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="footer-title">Contact</h4>
+                        <p style="color: rgba(255, 255, 255, 0.7); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+                            Mundargi Road, Near Adavi Somapur<br>Gadag, Karnataka 582103
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--space-2);">Phone: +91 94480 07467</p>
+                        <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                    </div>
                 </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); margin-top: var(--space-16);">
-                    
-                    <div class="card hover-lift reveal">
-                        <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Merit Scholarship</h3>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
-                            Up to 50% fee waiver for students scoring above 90% in 12th standard examinations.
-                        </p>
-                    </div>
-                    
-                    <div class="card hover-lift reveal delay-100">
-                        <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Need-Based Aid</h3>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
-                            Financial assistance for economically disadvantaged students based on family income.
-                        </p>
-                    </div>
-                    
-                    <div class="card hover-lift reveal delay-200">
-                        <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Sports Scholarship</h3>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
-                            Special scholarships for students with exceptional achievements in sports.
-                        </p>
-                    </div>
-                    
-                    <div class="card hover-lift reveal delay-300">
-                        <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Government Schemes</h3>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
-                            Assistance in applying for state and central government scholarship programs.
-                        </p>
-                    </div>
-                    
+                <div class="footer-bottom">
+                    <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
                 </div>
             </div>
-        </section>
-        
-        <!-- FAQ Section -->
-        <section class="section-lg" style="background-color: var(--color-cream);">
-            <div class="container">
-                <div style="max-width: 900px; margin: 0 auto;">
-                    <div class="section-header">
-                        <span class="section-label reveal">Common Questions</span>
-                        <h2 class="section-title reveal delay-100">Frequently Asked Questions</h2>
-                        <div class="divider reveal delay-200"></div>
-                    </div>
-                    
-                    <div style="margin-top: var(--space-16);">
-                        
-                        <div class="accordion-item reveal">
-                            <button class="accordion-header">
-                                <span>When do admissions open?</span>
-                                <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 7.5l5 5 5-5"/>
-                                </svg>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="accordion-body">
-                                    Admissions typically open in May each year following the announcement of 12th standard results. The exact dates are published on our website and local newspapers.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item reveal delay-100">
-                            <button class="accordion-header">
-                                <span>Is there an entrance examination?</span>
-                                <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 7.5l5 5 5-5"/>
-                                </svg>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="accordion-body">
-                                    Admissions are primarily merit-based on 12th standard marks. However, for certain specialized programs, an entrance test or interview may be conducted.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item reveal delay-200">
-                            <button class="accordion-header">
-                                <span>Can I apply for multiple programs?</span>
-                                <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 7.5l5 5 5-5"/>
-                                </svg>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="accordion-body">
-                                    Yes, you may apply for multiple programs. However, you can only enroll in one program at a time. Please indicate your preferences in order during application.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item reveal delay-300">
-                            <button class="accordion-header">
-                                <span>What is the refund policy?</span>
-                                <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 7.5l5 5 5-5"/>
-                                </svg>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="accordion-body">
-                                    Fee refunds are processed according to college policy. If withdrawal occurs before the semester begins, 80% of fees are refundable. After semester commencement, refunds are subject to specific terms and conditions.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item reveal delay-400">
-                            <button class="accordion-header">
-                                <span>Are hostel facilities available?</span>
-                                <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 7.5l5 5 5-5"/>
-                                </svg>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="accordion-body">
-                                    Yes, we have separate hostel facilities for male and female students with modern amenities. Hostel admission is subject to availability and separate application.
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- CTA Section -->
-        <section class="section" style="background-color: var(--color-navy); color: var(--color-text-light); text-align: center; border-top: var(--border-width) solid var(--color-border-dark);">
-            <div class="container">
-                <div class="reveal">
-                    <h2 style="margin-bottom: var(--space-6); font-size: clamp(2rem, 4vw, 3rem); color: var(--color-text-light);">
-                        Ready to Apply?
-                    </h2>
-                    <div class="divider" style="background-color: var(--color-gold);"></div>
-                    <p style="font-size: var(--text-lg); color: rgba(255, 255, 255, 0.8); margin-bottom: var(--space-8); max-width: 600px; margin-left: auto; margin-right: auto; line-height: var(--leading-relaxed);">
-                        Take the first step toward your academic future
-                    </p>
-                    <a href="contact.html" class="btn btn-gold btn-lg">Contact Admissions Office</a>
-                </div>
-            </div>
-        </section>
+        </footer>
         
     </main>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">Bipin Chikkatti College</div>
-                    <div class="footer-tagline">A Legacy of Excellence</div>
-                    <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed);">
-                        Cultivating minds and shaping futures since 1999.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="about.html" class="footer-link">About Us</a>
-                        <a href="courses.html" class="footer-link">Academics</a>
-                        <a href="admissions.html" class="footer-link">Admissions</a>
-                        <a href="faculty.html" class="footer-link">Faculty</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Resources</h4>
-                    <div class="footer-links">
-                        <a href="campus.html" class="footer-link">Campus</a>
-                        <a href="placements.html" class="footer-link">Placements</a>
-                        <a href="events.html" class="footer-link">Events</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
-                        Vidya Nagar, Gadag<br>Karnataka, India 582101
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--space-2);">Phone: +91 8372 234567</p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Email: info@bccgadag.edu.in</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
     
     <button class="back-to-top" aria-label="Back to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
