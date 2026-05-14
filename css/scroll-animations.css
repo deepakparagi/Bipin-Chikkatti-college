@@ -1,0 +1,381 @@
+/* ============================================
+   SCROLL-TRIGGERED ANIMATION SYSTEM
+   Cinematic Reveal Choreography
+   ============================================ */
+
+/* === INTERSECTION OBSERVER ANIMATIONS === */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px) rotateY(-15deg);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px) rotateY(15deg);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.8) rotateZ(-5deg);
+  transition: all var(--duration-epic) var(--ease-back-out);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1) rotateZ(0deg);
+}
+
+.reveal-fade {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all var(--duration-epic) var(--ease-luxury-brand);
+  will-change: opacity, filter;
+}
+
+.reveal-fade.active {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+/* === PARALLAX SCROLL EFFECTS === */
+.parallax-slow {
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.parallax-medium {
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.parallax-fast {
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* === STAGGERED REVEAL SYSTEM === */
+.stagger-container .reveal {
+  transition-delay: 0ms;
+}
+
+.stagger-container .reveal:nth-child(1) { transition-delay: 0ms; }
+.stagger-container .reveal:nth-child(2) { transition-delay: 150ms; }
+.stagger-container .reveal:nth-child(3) { transition-delay: 300ms; }
+.stagger-container .reveal:nth-child(4) { transition-delay: 450ms; }
+.stagger-container .reveal:nth-child(5) { transition-delay: 600ms; }
+.stagger-container .reveal:nth-child(6) { transition-delay: 750ms; }
+.stagger-container .reveal:nth-child(7) { transition-delay: 900ms; }
+.stagger-container .reveal:nth-child(8) { transition-delay: 1050ms; }
+
+/* === MORPHING ELEMENTS === */
+.morph-on-scroll {
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  will-change: transform, border-radius, box-shadow;
+}
+
+.morph-on-scroll.scrolled {
+  border-radius: 20px;
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* === SCROLL PROGRESS INDICATORS === */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(184, 149, 106, 0.5);
+}
+
+.scroll-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8));
+  animation: progress-glow 2s ease-in-out infinite;
+}
+
+@keyframes progress-glow {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* === SECTION REVEAL ANIMATIONS === */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all var(--duration-epic) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.section-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-reveal-clip {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path var(--duration-epic) var(--ease-luxury-brand);
+  will-change: clip-path;
+}
+
+.section-reveal-clip.active {
+  clip-path: inset(0% 0 0 0);
+}
+
+/* === TEXT REVEAL ANIMATIONS === */
+.text-reveal {
+  overflow: hidden;
+}
+
+.text-reveal span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all var(--duration-elegant) var(--ease-back-out);
+  will-change: opacity, transform;
+}
+
+.text-reveal.active span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-reveal span:nth-child(1) { transition-delay: 0ms; }
+.text-reveal span:nth-child(2) { transition-delay: 50ms; }
+.text-reveal span:nth-child(3) { transition-delay: 100ms; }
+.text-reveal span:nth-child(4) { transition-delay: 150ms; }
+.text-reveal span:nth-child(5) { transition-delay: 200ms; }
+
+/* === COUNTER ANIMATIONS === */
+.counter {
+  font-variant-numeric: tabular-nums;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+}
+
+.counter.counting {
+  color: var(--color-gold);
+  transform: scale(1.1);
+}
+
+/* === IMAGE REVEAL EFFECTS === */
+.image-reveal {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-reveal img {
+  transform: scale(1.2);
+  filter: blur(5px);
+  transition: all var(--duration-epic) var(--ease-luxury-brand);
+  will-change: transform, filter;
+}
+
+.image-reveal.active img {
+  transform: scale(1);
+  filter: blur(0px);
+}
+
+.image-reveal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--color-gold), transparent);
+  transform: translateX(-100%);
+  transition: transform var(--duration-luxurious) var(--ease-luxury-brand);
+  z-index: 1;
+}
+
+.image-reveal.active::before {
+  transform: translateX(100%);
+}
+
+/* === CARD STACK REVEAL === */
+.card-stack {
+  position: relative;
+}
+
+.card-stack .card {
+  opacity: 0;
+  transform: translateY(40px) rotateX(-15deg);
+  transition: all var(--duration-elegant) var(--ease-back-out);
+  will-change: opacity, transform;
+}
+
+.card-stack.active .card {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+.card-stack .card:nth-child(1) { transition-delay: 0ms; }
+.card-stack .card:nth-child(2) { transition-delay: 200ms; }
+.card-stack .card:nth-child(3) { transition-delay: 400ms; }
+
+/* === TIMELINE ANIMATIONS === */
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.timeline-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-item:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.timeline-item:nth-child(even).active {
+  transform: translateX(0);
+}
+
+/* === MAGNETIC SCROLL EFFECTS === */
+.magnetic-scroll {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* === SCROLL SNAP ANIMATIONS === */
+.scroll-snap-section {
+  scroll-snap-align: start;
+  opacity: 0.7;
+  transform: scale(0.95);
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  will-change: opacity, transform;
+}
+
+.scroll-snap-section.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* === FLOATING ELEMENTS === */
+.float-on-scroll {
+  animation: float-gentle 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+}
+
+/* === SCROLL VELOCITY EFFECTS === */
+.velocity-scale {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* === INTERSECTION OBSERVER UTILITIES === */
+.observe-once {
+  /* Elements that animate only once when first visible */
+}
+
+.observe-repeat {
+  /* Elements that animate every time they enter viewport */
+}
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+.will-animate {
+  will-change: transform, opacity, filter;
+}
+
+.animation-complete {
+  will-change: auto;
+}
+
+/* === RESPONSIVE SCROLL ANIMATIONS === */
+@media (max-width: 768px) {
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(30px);
+  }
+  
+  .reveal-left.active,
+  .reveal-right.active {
+    transform: translateY(0);
+  }
+  
+  .stagger-container .reveal:nth-child(n) {
+    transition-delay: 0ms;
+  }
+}
+
+/* === REDUCED MOTION ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .reveal-fade,
+  .section-reveal,
+  .text-reveal span,
+  .image-reveal img,
+  .card-stack .card,
+  .timeline-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+  
+  .float-on-scroll {
+    animation: none;
+  }
+  
+  .scroll-progress::after {
+    animation: none;
+  }
+}

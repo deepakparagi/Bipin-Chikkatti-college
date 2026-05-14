@@ -1,0 +1,618 @@
+/* ============================================
+   PREMIUM HOVER EFFECTS SYSTEM
+   Best-in-Class Interactive Elements
+   ============================================ */
+
+/* === ENHANCED NAVIGATION HOVER EFFECTS === */
+.navbar-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.1), transparent);
+  transition: left var(--duration-slow) var(--ease-refined);
+}
+
+.navbar-link:hover::before {
+  left: 100%;
+}
+
+.navbar-logo {
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05) translateY(-2px);
+  filter: drop-shadow(0 4px 8px rgba(184, 149, 106, 0.2));
+}
+
+/* === PREMIUM BUTTON HOVER EFFECTS === */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-slow) var(--ease-refined), height var(--duration-slow) var(--ease-refined);
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15), 0 0 40px rgba(184, 149, 106, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-2px) scale(1.01);
+  transition-duration: var(--duration-fast);
+}
+
+/* === ENHANCED CARD HOVER EFFECTS === */
+.card {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(184, 149, 106, 0.05) 0%, rgba(184, 149, 106, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-refined);
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-12px) rotateX(2deg) rotateY(1deg);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(184, 149, 106, 0.2);
+}
+
+/* === PREMIUM IMAGE HOVER EFFECTS === */
+.image-zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(44, 44, 44, 0.3) 0%, 
+    rgba(184, 149, 106, 0.2) 50%, 
+    rgba(44, 44, 44, 0.3) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-refined);
+  pointer-events: none;
+}
+
+.image-zoom:hover::after {
+  opacity: 1;
+}
+
+.image-zoom img {
+  transition: transform var(--duration-epic) var(--ease-refined), filter var(--duration-epic) var(--ease-smooth);
+}
+
+.image-zoom:hover img {
+  transform: scale(1.15) rotate(1deg);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* === ENHANCED LINK HOVER EFFECTS === */
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+  transition: width var(--duration-slow) var(--ease-refined);
+  transform-origin: left;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-underline:hover {
+  transform: translateX(4px);
+  color: var(--color-gold-light);
+}
+
+/* === TESTIMONIAL HOVER EFFECTS === */
+.testimonial {
+  position: relative;
+  transition: all var(--duration-slow) var(--ease-refined);
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-gold), var(--color-gold-light));
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform var(--duration-slow) var(--ease-refined);
+}
+
+.testimonial:hover::before {
+  transform: scaleY(1);
+}
+
+.testimonial:hover {
+  transform: translateX(16px) scale(1.02);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 243, 0.95));
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* === STAT CARD HOVER EFFECTS === */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-slow) var(--ease-refined);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(184, 149, 106, 0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-refined), transform var(--duration-epic) linear;
+  pointer-events: none;
+}
+
+.stat-card:hover::before {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.stat-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+  transition: all var(--duration-slow) var(--ease-refined);
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.1) translateY(-4px);
+  color: var(--color-gold-light);
+  text-shadow: 0 4px 8px rgba(184, 149, 106, 0.3);
+}
+
+/* === BADGE HOVER EFFECTS === */
+.badge {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.3), transparent);
+  transition: left var(--duration-slow) var(--ease-refined);
+}
+
+.badge:hover::before {
+  left: 100%;
+}
+
+.badge:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 8px 16px rgba(184, 149, 106, 0.3);
+  border-color: var(--color-gold-light);
+  background-color: rgba(184, 149, 106, 0.1);
+}
+
+/* === SECTION LABEL HOVER EFFECTS === */
+.section-label {
+  position: relative;
+  transition: all var(--duration-medium) var(--ease-refined);
+  cursor: default;
+}
+
+.section-label:hover {
+  transform: scale(1.05);
+  color: var(--color-gold-light);
+  letter-spacing: 0.15em;
+}
+
+/* === DIVIDER HOVER EFFECTS === */
+.divider {
+  position: relative;
+  transition: all var(--duration-slow) var(--ease-refined);
+  cursor: default;
+}
+
+.divider:hover {
+  width: 120px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+  box-shadow: 0 2px 8px rgba(184, 149, 106, 0.4);
+}
+
+/* === FOOTER LINK HOVER EFFECTS === */
+.footer-link {
+  position: relative;
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.footer-link::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all var(--duration-medium) var(--ease-refined);
+  color: var(--color-gold);
+}
+
+.footer-link:hover::before {
+  left: -15px;
+  opacity: 1;
+}
+
+.footer-link:hover {
+  padding-left: var(--space-4);
+  color: var(--color-gold-light);
+}
+
+/* === FORM ELEMENT HOVER EFFECTS === */
+.form-input,
+.form-textarea,
+.form-select {
+  position: relative;
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.form-input:hover,
+.form-textarea:hover,
+.form-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184, 149, 106, 0.15);
+  border-color: var(--color-gold-light);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 32px rgba(184, 149, 106, 0.2);
+}
+
+/* === ACCORDION HOVER EFFECTS === */
+.accordion-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.accordion-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.05), transparent);
+  transition: left var(--duration-slow) var(--ease-refined);
+}
+
+.accordion-header:hover::before {
+  left: 100%;
+}
+
+.accordion-header:hover {
+  padding-left: calc(var(--space-6) + 12px);
+  transform: translateX(4px);
+  color: var(--color-gold);
+}
+
+/* === BACK TO TOP HOVER EFFECTS === */
+.back-to-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.back-to-top::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-slow) var(--ease-refined), height var(--duration-slow) var(--ease-refined);
+}
+
+.back-to-top:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.back-to-top:hover {
+  transform: translateY(-8px) scale(1.1) rotate(5deg);
+  box-shadow: 0 16px 32px rgba(184, 149, 106, 0.4);
+}
+
+/* === THEME TOGGLE ENHANCED HOVER === */
+.navbar-theme-toggle:hover {
+  transform: scale(1.1) rotate(20deg);
+  box-shadow: 0 8px 24px rgba(184, 149, 106, 0.3);
+}
+
+.navbar-theme-toggle svg {
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.navbar-theme-toggle:hover svg {
+  transform: scale(1.2) rotate(15deg);
+}
+
+/* === RESPONSIVE HOVER ADJUSTMENTS === */
+@media (max-width: 768px) {
+  .card:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px) scale(1.01);
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+/* === ACCESSIBILITY - REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .btn:hover,
+  .stat-card:hover,
+  .testimonial:hover,
+  .image-zoom:hover img,
+  .back-to-top:hover,
+  .navbar-theme-toggle:hover {
+    transform: none;
+  }
+  
+  .card::before,
+  .btn::before,
+  .stat-card::before,
+  .testimonial::before,
+  .image-zoom::after,
+  .hover-underline::after,
+  .badge::before,
+  .accordion-header::before,
+  .back-to-top::before {
+    display: none;
+  }
+}
+
+/* === ADDITIONAL PREMIUM HOVER EFFECTS === */
+
+/* Timeline Item Hover Effects */
+.timeline-item,
+[style*="grid-template-columns: 120px 1fr"] {
+  transition: all var(--duration-slow) var(--ease-refined);
+  cursor: default;
+}
+
+.timeline-item:hover,
+[style*="grid-template-columns: 120px 1fr"]:hover {
+  transform: translateX(12px) scale(1.01);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(250, 248, 243, 0.9));
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Year Number Hover Effect */
+[style*="font-size: var(--text-4xl)"][style*="color: var(--color-gold)"] {
+  transition: all var(--duration-medium) var(--ease-refined);
+  cursor: default;
+}
+
+[style*="font-size: var(--text-4xl)"][style*="color: var(--color-gold)"]:hover {
+  transform: scale(1.1) rotate(-2deg);
+  text-shadow: 0 4px 12px rgba(184, 149, 106, 0.4);
+  color: var(--color-gold-light);
+}
+
+/* CTA Section Hover Effects */
+section[style*="background-color: var(--color-navy)"] {
+  position: relative;
+  overflow: hidden;
+}
+
+section[style*="background-color: var(--color-navy)"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.1), transparent);
+  transition: left var(--duration-epic) var(--ease-refined);
+  pointer-events: none;
+}
+
+section[style*="background-color: var(--color-navy)"]:hover::before {
+  left: 100%;
+}
+
+/* Grid Item Hover Effects */
+[style*="display: grid"] > div {
+  transition: transform var(--duration-medium) var(--ease-refined);
+}
+
+[style*="display: grid"] > div:hover {
+  transform: translateY(-4px);
+}
+
+/* Text Content Hover Effects */
+p[style*="font-size: var(--text-lg)"] {
+  transition: all var(--duration-medium) var(--ease-refined);
+  cursor: default;
+}
+
+p[style*="font-size: var(--text-lg)"]:hover {
+  color: var(--color-text-primary);
+  transform: translateX(4px);
+}
+
+/* Enhanced Image Container Hover */
+div[class*="image-"] {
+  position: relative;
+  overflow: hidden;
+}
+
+div[class*="image-"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(184, 149, 106, 0.1) 0%, 
+    rgba(44, 44, 44, 0.05) 50%, 
+    rgba(184, 149, 106, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-refined);
+  pointer-events: none;
+}
+
+div[class*="image-"]:hover::after {
+  opacity: 1;
+}
+
+/* Contact Information Hover Effects */
+p[style*="color: rgba(255, 255, 255, 0.7)"] {
+  transition: all var(--duration-medium) var(--ease-refined);
+  cursor: default;
+}
+
+p[style*="color: rgba(255, 255, 255, 0.7)"]:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateX(8px);
+}
+
+/* Enhanced Section Headers */
+.section-header {
+  transition: transform var(--duration-slow) var(--ease-refined);
+}
+
+.section-header:hover {
+  transform: translateY(-4px);
+}
+
+/* Quote/Testimonial Text Hover */
+p[style*="font-style: italic"] {
+  position: relative;
+  transition: all var(--duration-slow) var(--ease-refined);
+}
+
+p[style*="font-style: italic"]:hover {
+  transform: scale(1.02);
+  color: var(--color-gold);
+}
+
+/* Enhanced Container Hover for Interactive Sections */
+.container:hover {
+  transform: translateZ(0);
+}
+
+/* Subtle Animation for All Headings */
+h1, h2, h3, h4, h5, h6 {
+  transition: all var(--duration-medium) var(--ease-refined);
+  cursor: default;
+}
+
+h1:hover, h2:hover, h3:hover {
+  transform: translateY(-2px);
+  color: var(--color-gold);
+  text-shadow: 0 4px 8px rgba(184, 149, 106, 0.2);
+}
+
+h4:hover, h5:hover, h6:hover {
+  transform: translateX(4px);
+  color: var(--color-gold-light);
+}
+
+/* Enhanced Mobile Hover Effects */
+@media (hover: hover) and (pointer: fine) {
+  /* All hover effects above only apply on devices that support proper hover */
+}
+
+@media (hover: none) and (pointer: coarse) {
+  /* Disable complex hover effects on touch devices */
+  .card:hover,
+  .btn:hover,
+  .stat-card:hover,
+  .testimonial:hover,
+  .image-zoom:hover img,
+  .back-to-top:hover,
+  .navbar-theme-toggle:hover,
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    transform: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}

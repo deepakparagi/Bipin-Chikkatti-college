@@ -1,0 +1,70 @@
+/* ============================================
+   SPACING FIX - NAVBAR TO HERO SECTION
+   Eliminates Unnecessary Gaps
+   ============================================ */
+
+/* Remove body padding-top that was causing the gap */
+body {
+  padding-top: 0 !important;
+}
+
+/* Ensure navbar is properly positioned */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  height: 76px;
+}
+
+/* Page wrapper should start right after navbar */
+.page-wrapper {
+  margin-top: 76px;
+  padding-top: 0;
+}
+
+/* Hero sections should have minimal top padding */
+.page-wrapper > section:first-child {
+  padding-top: var(--space-8) !important;
+  margin-top: 0 !important;
+}
+
+/* Adjust hero section heights for better proportions */
+section[style*="min-height: 60vh"] {
+  min-height: 55vh !important;
+}
+
+section[style*="min-height: 45vh"] {
+  min-height: 40vh !important;
+}
+
+/* Ensure hero content is properly centered */
+section[style*="display: flex"][style*="align-items: center"] {
+  justify-content: center;
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .page-wrapper > section:first-child {
+    padding-top: var(--space-6) !important;
+  }
+  
+  section[style*="min-height: 55vh"] {
+    min-height: 50vh !important;
+  }
+  
+  section[style*="min-height: 40vh"] {
+    min-height: 35vh !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  section[style*="display: flex"][style*="align-items: center"] {
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-10);
+  }
+}

@@ -1,0 +1,200 @@
+/* ============================================
+   SPACING OPTIMIZATION
+   Refined spacing for premium editorial feel
+   ============================================ */
+
+/* === HERO SECTIONS === */
+section[style*="min-height: 90vh"],
+section[style*="min-height: 50vh"] {
+  min-height: 70vh !important;
+}
+
+@media (max-width: 768px) {
+  section[style*="min-height"] {
+    min-height: 60vh !important;
+  }
+}
+
+/* === SECTION SPACING OPTIMIZATION === */
+.section-lg {
+  padding: var(--section-padding-lg) 0;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section-sm {
+  padding: var(--section-padding-sm) 0;
+}
+
+/* === GRID GAPS === */
+[style*="gap: var(--space-20)"] {
+  gap: var(--section-gap) !important;
+}
+
+[style*="gap: var(--space-16)"] {
+  gap: var(--space-12) !important;
+}
+
+[style*="gap: var(--space-12)"] {
+  gap: var(--card-gap) !important;
+}
+
+[style*="gap: var(--space-8)"] {
+  gap: var(--card-gap) !important;
+}
+
+/* === MARGIN OPTIMIZATION === */
+[style*="margin-top: var(--space-16)"] {
+  margin-top: var(--space-12) !important;
+}
+
+[style*="margin-bottom: var(--space-16)"] {
+  margin-bottom: var(--space-12) !important;
+}
+
+[style*="margin-top: var(--space-10)"] {
+  margin-top: var(--space-8) !important;
+}
+
+[style*="margin-bottom: var(--space-10)"] {
+  margin-bottom: var(--space-8) !important;
+}
+
+/* === PADDING OPTIMIZATION === */
+[style*="padding: var(--space-16)"] {
+  padding: var(--space-12) !important;
+}
+
+[style*="padding: var(--space-12)"] {
+  padding: var(--space-10) !important;
+}
+
+/* === CARD SPACING === */
+.card {
+  padding: var(--space-8);
+}
+
+.card-minimal {
+  padding: var(--space-5) 0;
+}
+
+/* === SECTION HEADER OPTIMIZATION === */
+.section-header {
+  margin-bottom: var(--space-10);
+}
+
+.section-label {
+  margin-bottom: var(--space-3);
+}
+
+.section-title {
+  margin-bottom: var(--space-5);
+}
+
+.section-description {
+  margin-top: var(--space-5);
+}
+
+/* === TESTIMONIAL OPTIMIZATION === */
+.testimonial {
+  padding: var(--space-8);
+}
+
+.testimonial-text {
+  margin-bottom: var(--space-5);
+}
+
+/* === STAT CARD OPTIMIZATION === */
+.stat-card {
+  padding: var(--space-6);
+}
+
+.stat-number {
+  margin-bottom: var(--space-1);
+}
+
+/* === FORM OPTIMIZATION === */
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+/* === ACCORDION OPTIMIZATION === */
+.accordion-header {
+  padding: var(--space-5) 0;
+}
+
+.accordion-body {
+  padding-bottom: var(--space-5);
+}
+
+/* === DIVIDER OPTIMIZATION === */
+.divider {
+  margin: var(--space-5) auto;
+}
+
+.divider-left {
+  margin-left: 0;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+/* === RESPONSIVE SPACING === */
+@media (max-width: 1024px) {
+  .section-lg {
+    padding: var(--space-16) 0;
+  }
+  
+  .section {
+    padding: var(--space-12) 0;
+  }
+  
+  [style*="gap: var(--section-gap)"] {
+    gap: var(--space-10) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-lg {
+    padding: var(--space-12) 0;
+  }
+  
+  .section {
+    padding: var(--space-10) 0;
+  }
+  
+  .section-sm {
+    padding: var(--space-8) 0;
+  }
+  
+  [style*="gap: var(--section-gap)"] {
+    gap: var(--space-8) !important;
+  }
+  
+  [style*="gap: var(--card-gap)"] {
+    gap: var(--space-6) !important;
+  }
+  
+  .card {
+    padding: var(--space-6);
+  }
+  
+  .testimonial {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-lg {
+    padding: var(--space-10) 0;
+  }
+  
+  .section {
+    padding: var(--space-8) 0;
+  }
+  
+  .section-sm {
+    padding: var(--space-6) 0;
+  }
+}

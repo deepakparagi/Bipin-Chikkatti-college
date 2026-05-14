@@ -1,0 +1,784 @@
+/* ============================================
+   WORLD-CLASS PREMIUM ANIMATION SYSTEM
+   Award-Winning Cinematic Luxury Interactions
+   Awwwards-Level Motion Design
+   ============================================ */
+
+/* === PREMIUM EASING CURVES === */
+:root {
+  /* Award-level luxury easing functions */
+  --ease-luxury: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-smooth: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-elegant: cubic-bezier(0.33, 1, 0.68, 1);
+  --ease-cinematic: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-refined: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-premium: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-sophisticated: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-awwwards: cubic-bezier(0.77, 0, 0.175, 1);
+  
+  /* Premium timing scale */
+  --duration-instant: 150ms;
+  --duration-fast: 300ms;
+  --duration-medium: 500ms;
+  --duration-slow: 700ms;
+  --duration-slower: 900ms;
+  --duration-cinematic: 1200ms;
+  --duration-epic: 1600ms;
+}
+
+/* ============================================
+   CINEMATIC SCROLL REVEAL SYSTEM
+   Layered Stagger Choreography
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity var(--duration-slower) var(--ease-editorial),
+              transform var(--duration-slower) var(--ease-editorial);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity var(--duration-slower) var(--ease-editorial),
+              transform var(--duration-slower) var(--ease-editorial);
+  will-change: opacity, transform;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity var(--duration-slower) var(--ease-editorial),
+              transform var(--duration-slower) var(--ease-editorial);
+  will-change: opacity, transform;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.88) translateY(30px);
+  transition: opacity var(--duration-cinematic) var(--ease-refined),
+              transform var(--duration-cinematic) var(--ease-refined);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transform: translateZ(0);
+  transition: opacity var(--duration-epic) var(--ease-luxury);
+  will-change: opacity;
+}
+
+.reveal-fade.active {
+  opacity: 1;
+}
+
+/* ============================================
+   SOPHISTICATED STAGGER DELAYS
+   ============================================ */
+
+.delay-50 { transition-delay: 50ms; }
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-250 { transition-delay: 250ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-350 { transition-delay: 350ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-450 { transition-delay: 450ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-550 { transition-delay: 550ms; }
+.delay-600 { transition-delay: 600ms; }
+.delay-650 { transition-delay: 650ms; }
+.delay-700 { transition-delay: 700ms; }
+.delay-750 { transition-delay: 750ms; }
+.delay-800 { transition-delay: 800ms; }
+.delay-850 { transition-delay: 850ms; }
+.delay-900 { transition-delay: 900ms; }
+
+/* ============================================
+   AWARD-LEVEL CARD SYSTEM
+   3D Elevation & Parallax Tilt
+   ============================================ */
+
+.card {
+  position: relative;
+  transition: transform var(--duration-slow) var(--ease-refined),
+              box-shadow var(--duration-slow) var(--ease-refined),
+              border-color var(--duration-medium) var(--ease-smooth);
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card:hover {
+  transform: translateY(-12px) translateZ(20px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12),
+              0 8px 16px rgba(0, 0, 0, 0.08),
+              0 0 0 1px rgba(201, 168, 118, 0.2);
+  border-color: var(--color-gold);
+}
+
+.card:active {
+  transform: translateY(-8px) translateZ(10px);
+  transition-duration: var(--duration-fast);
+}
+
+.card-glass {
+  position: relative;
+  transition: transform var(--duration-slow) var(--ease-refined),
+              backdrop-filter var(--duration-slow) var(--ease-smooth),
+              background-color var(--duration-slow) var(--ease-smooth),
+              box-shadow var(--duration-slow) var(--ease-refined);
+  will-change: transform, backdrop-filter;
+}
+
+.card-glass:hover {
+  transform: translateY(-8px) scale(1.02);
+  backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(201, 168, 118, 0.15);
+}
+
+.card-minimal {
+  position: relative;
+  transition: transform var(--duration-medium) var(--ease-refined),
+              border-color var(--duration-medium) var(--ease-smooth),
+              padding-left var(--duration-medium) var(--ease-refined),
+              background-color var(--duration-medium) var(--ease-smooth);
+  will-change: transform, border-color;
+}
+
+.card-minimal:hover {
+  transform: translateX(12px);
+  border-bottom-color: var(--color-gold);
+  padding-left: calc(var(--space-4) + 8px);
+  background-color: rgba(201, 168, 118, 0.03);
+}
+
+/* ============================================
+   LUXURY HOVER EFFECTS
+   ============================================ */
+
+.hover-lift {
+  position: relative;
+  transition: transform var(--duration-slow) var(--ease-refined),
+              box-shadow var(--duration-slow) var(--ease-refined);
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+}
+
+.hover-lift:hover {
+  transform: translateY(-16px) scale(1.02) rotateX(2deg);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15),
+              0 12px 24px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(201, 168, 118, 0.15);
+}
+
+.hover-lift:active {
+  transform: translateY(-8px) scale(1.01);
+  transition-duration: var(--duration-fast);
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transition: width var(--duration-slow) var(--ease-refined);
+  transform-origin: left;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-glow {
+  position: relative;
+  transition: transform var(--duration-slow) var(--ease-refined),
+              box-shadow var(--duration-slow) var(--ease-refined),
+              filter var(--duration-slow) var(--ease-smooth);
+  will-change: transform, box-shadow, filter;
+}
+
+.hover-glow:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12),
+              0 0 60px rgba(201, 168, 118, 0.2);
+  filter: brightness(1.05);
+}
+
+.hover-scale {
+  transition: transform var(--duration-slow) var(--ease-refined),
+              filter var(--duration-slow) var(--ease-smooth);
+  will-change: transform, filter;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05) translateZ(10px);
+  filter: brightness(1.02);
+}
+
+/* ============================================
+   AWARD-LEVEL BUTTON SYSTEM
+   Magnetic & Cinematic Interactions
+   ============================================ */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-medium) var(--ease-refined);
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-slow) var(--ease-refined),
+              height var(--duration-slow) var(--ease-refined),
+              opacity var(--duration-slow) var(--ease-smooth);
+  opacity: 0;
+}
+
+.btn:hover::before {
+  width: 400px;
+  height: 400px;
+  opacity: 1;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18),
+              0 0 40px rgba(201, 168, 118, 0.15);
+}
+
+.btn:active {
+  transform: translateY(-2px) scale(1.01);
+  transition-duration: var(--duration-instant);
+}
+
+.btn-primary,
+.btn-gold {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after,
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.3), 
+    transparent);
+  transition: left var(--duration-cinematic) var(--ease-refined);
+}
+
+.btn-primary:hover::after,
+.btn-gold:hover::after {
+  left: 100%;
+}
+
+.btn-outline {
+  position: relative;
+  background: transparent;
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-slow) var(--ease-refined);
+  z-index: -1;
+}
+
+.btn-outline:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-outline:hover {
+  color: var(--color-navy);
+  border-color: var(--color-gold);
+}
+
+/* ============================================
+   CINEMATIC IMAGE EFFECTS
+   ============================================ */
+
+.image-zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-zoom img {
+  transition: transform var(--duration-epic) var(--ease-refined),
+              filter var(--duration-epic) var(--ease-smooth);
+  will-change: transform, filter;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.12) translateZ(20px);
+  filter: brightness(1.05);
+}
+
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(44, 44, 44, 0.5), 
+    rgba(201, 168, 118, 0.3));
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-refined);
+  pointer-events: none;
+}
+
+.image-overlay:hover::after {
+  opacity: 1;
+}
+
+.image-parallax {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.image-parallax img {
+  transition: transform var(--duration-cinematic) var(--ease-refined);
+  will-change: transform;
+}
+
+.image-parallax:hover img {
+  transform: scale(1.08) translateY(-15px) rotateX(2deg);
+}
+
+/* ============================================
+   NAVBAR PREMIUM INTERACTIONS
+   ============================================ */
+
+.navbar {
+  transition: background-color var(--duration-medium) var(--ease-smooth),
+              backdrop-filter var(--duration-medium) var(--ease-smooth),
+              box-shadow var(--duration-medium) var(--ease-smooth),
+              border-bottom-color var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-medium) var(--ease-refined);
+}
+
+.navbar.scrolled {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-link {
+  position: relative;
+  transition: color var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-medium) var(--ease-refined);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transform: translateX(-50%);
+  transition: width var(--duration-slow) var(--ease-refined);
+}
+
+.navbar-link:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+  width: 100%;
+}
+
+.navbar-cta {
+  transition: all var(--duration-medium) var(--ease-refined);
+  transform-style: preserve-3d;
+}
+
+.navbar-cta:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(201, 168, 118, 0.35);
+}
+
+.navbar-menu {
+  transition: opacity var(--duration-slow) var(--ease-refined),
+              transform var(--duration-slow) var(--ease-refined),
+              visibility var(--duration-slow);
+}
+
+.navbar-menu.active {
+  animation: menuSlideIn var(--duration-slow) var(--ease-refined) forwards;
+}
+
+@keyframes menuSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.navbar-toggle span {
+  transition: all var(--duration-medium) var(--ease-refined);
+}
+
+/* ============================================
+   BACK TO TOP BUTTON
+   ============================================ */
+
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px) scale(0.7) rotate(-10deg);
+  transition: opacity var(--duration-slow) var(--ease-refined),
+              visibility var(--duration-slow),
+              transform var(--duration-slow) var(--ease-refined),
+              box-shadow var(--duration-medium) var(--ease-smooth);
+  will-change: opacity, transform;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+.back-to-top:hover {
+  transform: translateY(-6px) scale(1.1) rotate(5deg);
+  box-shadow: 0 16px 36px rgba(201, 168, 118, 0.4);
+}
+
+.back-to-top:active {
+  transform: translateY(-3px) scale(1.05) rotate(2deg);
+}
+
+/* ============================================
+   THEME TOGGLE ANIMATION
+   ============================================ */
+
+.theme-toggle {
+  transition: all var(--duration-slow) var(--ease-refined);
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-4px) rotate(20deg) scale(1.1);
+  box-shadow: 0 12px 32px rgba(201, 168, 118, 0.35);
+}
+
+.theme-toggle:active {
+  transform: translateY(-2px) rotate(15deg) scale(1.05);
+}
+
+.theme-toggle svg {
+  transition: transform var(--duration-slow) var(--ease-refined),
+              opacity var(--duration-medium) var(--ease-smooth);
+}
+
+.theme-toggle:hover svg {
+  transform: scale(1.15) rotate(10deg);
+}
+
+.theme-toggle .sun-icon,
+.theme-toggle .moon-icon {
+  transition: opacity var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-medium) var(--ease-smooth);
+}
+
+/* ============================================
+   TESTIMONIAL ANIMATIONS
+   ============================================ */
+
+.testimonial {
+  transition: transform var(--duration-slow) var(--ease-refined),
+              box-shadow var(--duration-slow) var(--ease-refined),
+              border-left-color var(--duration-medium) var(--ease-smooth),
+              background-color var(--duration-slow) var(--ease-smooth);
+  will-change: transform, box-shadow;
+}
+
+.testimonial:hover {
+  transform: translateX(16px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-left-color: var(--color-gold-light);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   STAT CARD ANIMATIONS
+   ============================================ */
+
+.stat-card {
+  transition: transform var(--duration-slow) var(--ease-refined),
+              background-color var(--duration-slow) var(--ease-smooth),
+              border-color var(--duration-medium) var(--ease-smooth),
+              box-shadow var(--duration-slow) var(--ease-refined);
+  will-change: transform, background-color;
+  transform-style: preserve-3d;
+}
+
+.stat-card:hover {
+  transform: translateY(-12px) scale(1.05) rotateX(5deg);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: var(--color-gold);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+  transition: color var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-slow) var(--ease-refined);
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.1) translateY(-4px);
+  color: var(--color-gold-light);
+}
+
+/* ============================================
+   ACCORDION ANIMATIONS
+   ============================================ */
+
+.accordion-header {
+  transition: background-color var(--duration-medium) var(--ease-smooth),
+              color var(--duration-medium) var(--ease-smooth),
+              padding-left var(--duration-medium) var(--ease-refined),
+              transform var(--duration-medium) var(--ease-refined);
+}
+
+.accordion-header:hover {
+  padding-left: calc(var(--space-6) + 12px);
+  transform: translateX(4px);
+}
+
+.accordion-body {
+  transition: max-height var(--duration-slow) var(--ease-refined),
+              opacity var(--duration-slow) var(--ease-smooth),
+              padding var(--duration-slow) var(--ease-smooth);
+}
+
+/* ============================================
+   BADGE & TAG ANIMATIONS
+   ============================================ */
+
+.badge,
+.tag {
+  transition: transform var(--duration-medium) var(--ease-refined),
+              background-color var(--duration-medium) var(--ease-smooth),
+              border-color var(--duration-medium) var(--ease-smooth),
+              box-shadow var(--duration-medium) var(--ease-refined);
+}
+
+.badge:hover,
+.tag:hover {
+  transform: scale(1.08) translateY(-2px);
+  background-color: rgba(201, 168, 118, 0.25);
+  border-color: var(--color-gold-light);
+  box-shadow: 0 4px 12px rgba(201, 168, 118, 0.2);
+}
+
+/* ============================================
+   LINK ANIMATIONS
+   ============================================ */
+
+a {
+  transition: color var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-medium) var(--ease-refined);
+}
+
+a:hover {
+  transform: translateX(2px);
+}
+
+/* ============================================
+   FORM ELEMENT ANIMATIONS
+   ============================================ */
+
+.form-input,
+.form-textarea,
+.form-select {
+  transition: border-color var(--duration-medium) var(--ease-smooth),
+              box-shadow var(--duration-medium) var(--ease-smooth),
+              transform var(--duration-medium) var(--ease-refined),
+              background-color var(--duration-medium) var(--ease-smooth);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 24px rgba(201, 168, 118, 0.15);
+}
+
+/* ============================================
+   SCROLL PROGRESS BAR
+   ============================================ */
+
+.scroll-progress {
+  transition: width var(--duration-instant) linear,
+              background-color var(--duration-medium) var(--ease-smooth),
+              box-shadow var(--duration-medium) var(--ease-smooth);
+  box-shadow: 0 0 20px rgba(201, 168, 118, 0.5);
+}
+
+/* ============================================
+   SMOOTH MOMENTUM SCROLLING
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ============================================
+   PAGE TRANSITION SYSTEM
+   ============================================ */
+
+.page-wrapper {
+  animation: pageEnter var(--duration-cinematic) var(--ease-editorial);
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale,
+.hover-lift,
+.card,
+.btn,
+.back-to-top,
+.theme-toggle {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ============================================
+   RESPONSIVE ANIMATION ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(40px);
+  }
+  
+  .reveal-left {
+    transform: translateX(-40px);
+  }
+  
+  .reveal-right {
+    transform: translateX(40px);
+  }
+}

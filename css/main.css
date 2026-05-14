@@ -1,0 +1,133 @@
+/* ============================================
+   MAIN STYLESHEET
+   Bipin Chikkatti College
+   Subtle Minimal Classic Old-Money Premium
+   ============================================ */
+
+/* === IMPORTS === */
+@import url('variables.css');
+@import url('reset.css');
+@import url('base.css');
+@import url('navigation.css');
+@import url('components.css');
+@import url('loaders.css');
+@import url('animations-enhanced.css');
+@import url('luxury-animations.css');
+@import url('micro-interactions.css');
+@import url('scroll-animations.css');
+@import url('premium-hover-effects.css');
+@import url('spacing-optimization.css');
+@import url('spacing-fix.css');
+@import url('responsive-system.css');
+@import url('mobile-enhanced.css');
+@import url('dark-theme.css');
+
+/* === PAGE WRAPPER === */
+.page-wrapper {
+  padding-top: 0;
+  min-height: 100vh;
+}
+
+/* Hero sections should start immediately after navbar */
+.page-wrapper > section:first-child {
+  margin-top: 0;
+  padding-top: 76px;
+  min-height: calc(100vh - 76px);
+}
+
+/* Ensure proper spacing for non-hero first sections */
+.page-wrapper > section:first-child:not([style*="min-height"]) {
+  margin-top: 76px;
+  padding-top: var(--section-padding);
+}
+
+/* === FOOTER === */
+footer {
+  background-color: var(--color-navy);
+  color: var(--color-text-light);
+  padding: var(--space-16) 0 var(--space-6);
+  border-top: var(--border-width) solid var(--color-border-dark);
+}
+
+footer h3,
+footer h4 {
+  color: var(--color-text-light);
+  font-family: var(--font-serif);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-base);
+}
+
+footer a:hover {
+  color: var(--color-gold);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-10);
+}
+
+.footer-brand {
+  font-size: var(--text-2xl);
+  font-family: var(--font-serif);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-4);
+}
+
+.footer-tagline {
+  color: var(--color-gold);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-6);
+}
+
+.footer-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-6);
+  color: var(--color-text-light);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-link {
+  font-size: var(--text-sm);
+  transition: all var(--transition-base);
+}
+
+.footer-link:hover {
+  padding-left: var(--space-2);
+}
+
+.footer-bottom {
+  padding-top: var(--space-8);
+  border-top: var(--border-width) solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+}
+
+/* === RESPONSIVE FOOTER === */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}

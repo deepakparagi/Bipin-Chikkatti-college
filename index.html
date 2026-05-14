@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bipin Chikkatti College - A legacy of academic excellence in Gadag, Karnataka">
+    <title>Bipin Chikkatti College | Excellence in Education</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical CSS Preload -->
+    <link rel="preload" href="css/production-optimized.css" as="style">
+    <link rel="preload" href="js/main-fixed.js" as="script">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    
+    <!-- Primary Entry Loader (Cinematic Welcome) -->
+    <div class="primary-loader">
+        <div class="primary-loader-content">
+            <div class="primary-loader-line-top"></div>
+            <h1 class="primary-loader-brand">Bipin Chikkatti College</h1>
+            <p class="primary-loader-tagline">A Legacy of Excellence</p>
+            <div class="primary-loader-line-bottom"></div>
+            <span class="primary-loader-year">Est. 1994</span>
+        </div>
+    </div>
+    
+    <!-- Secondary Page Transition Loader -->
+    <div class="secondary-loader">
+        <div class="secondary-loader-panel">
+            <div class="secondary-loader-accent"></div>
+            <div class="secondary-loader-mark">BCC</div>
+            <div class="secondary-loader-progress"></div>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.svg" alt="Bipin Chikkatti College Logo">
+            </a>
+            
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link active">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="courses.html" class="navbar-link">Courses</a></li>
+                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
+                <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
+                <li><a href="campus.html" class="navbar-link">Campus</a></li>
+                <li><a href="placements.html" class="navbar-link">Placements</a></li>
+                <li><a href="events.html" class="navbar-link">Events</a></li>
+                <li>
+                    <button class="navbar-theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="contact.html" class="navbar-cta">Contact</a></li>
+            </ul>
+            
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="page-wrapper">
+        
+        <!-- Hero Section -->
+        <section style="min-height: 60vh; display: flex; align-items: center; background-color: var(--color-cream); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <span class="badge reveal">Est. 1994</span>
+                    <h1 class="reveal delay-100" style="margin-top: var(--space-6); margin-bottom: var(--space-5); font-size: clamp(3rem, 6vw, 5rem);">
+                        A Legacy of<br>Academic Excellence
+                    </h1>
+                    <div class="divider reveal delay-200"></div>
+                    <p class="reveal delay-300" style="font-size: var(--text-xl); color: var(--color-text-secondary); margin-bottom: var(--space-8); line-height: var(--leading-relaxed);">
+                        Bipin Chikkatti College stands as a beacon of higher learning in Gadag, Karnataka, cultivating minds and shaping futures for three decades with integrated coaching and world-class facilities.
+                    </p>
+                    <div class="reveal delay-400" style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                        <a href="courses.html" class="btn btn-primary btn-lg">Explore Programs</a>
+                        <a href="about.html" class="btn btn-outline btn-lg">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="section" style="background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8);">
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-counter="30">0</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-card reveal delay-100">
+                        <div class="stat-number" data-counter="5000">0</div>
+                        <div class="stat-label">Alumni Worldwide</div>
+                    </div>
+                    <div class="stat-card reveal delay-200">
+                        <div class="stat-number" data-counter="50">0</div>
+                        <div class="stat-label">Expert Faculty</div>
+                    </div>
+                    <div class="stat-card reveal delay-300">
+                        <div class="stat-number" data-counter="95">0</div>
+                        <div class="stat-label">Placement Rate %</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Introduction Section -->
+        <section class="section-lg" style="background-color: var(--color-cream);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: center;">
+                    <div class="reveal-left image-zoom">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=900&fit=crop" alt="College Building" style="width: 100%; height: 600px; object-fit: cover; border: var(--border-width) solid var(--color-border);">
+                    </div>
+                    <div>
+                        <span class="section-label reveal">Our Heritage</span>
+                        <h2 class="reveal delay-100" style="margin-bottom: var(--space-6);">
+                            Cultivating Minds,<br>Shaping Futures
+                        </h2>
+                        <div class="divider divider-left reveal delay-200"></div>
+                        <p class="reveal delay-300" style="font-size: var(--text-lg); margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            Founded in 1994 by Prof. S. Y. Chikkatti, Bipin Chikkatti College has been dedicated to providing transformative education that combines academic rigor with character development. Our institution embodies a commitment to accessible, quality education across a sprawling 7-acre lush green campus.
+                        </p>
+                        <p class="reveal delay-400" style="margin-bottom: var(--space-8); line-height: var(--leading-relaxed);">
+                            We believe in nurturing not just scholars, but well-rounded individuals equipped to navigate the complexities of the modern world while remaining grounded in timeless values of integrity, excellence, and service.
+                        </p>
+                        <a href="about.html" class="btn btn-outline reveal delay-500">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Departments Section -->
+        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Academic Excellence</span>
+                    <h2 class="section-title reveal delay-100">Our Departments</h2>
+                    <div class="divider reveal delay-200"></div>
+                    <p class="section-description reveal delay-300">
+                        Comprehensive programs designed to foster intellectual curiosity and professional competence
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--card-gap); margin-top: var(--space-12);">
+                    
+                    <div class="card hover-lift reveal">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Faculty of Science</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            Advanced laboratories and research-driven curriculum in Physics, Chemistry, Mathematics, and Computer Science.
+                        </p>
+                        <a href="courses.html" class="hover-underline" style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); color: var(--color-gold); font-weight: var(--font-medium);">View Programs →</a>
+                    </div>
+                    
+                    <div class="card hover-lift reveal delay-100">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Faculty of Commerce</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            Comprehensive business education focusing on accounting, finance, economics, and entrepreneurship.
+                        </p>
+                        <a href="courses.html" class="hover-underline" style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); color: var(--color-gold); font-weight: var(--font-medium);">View Programs →</a>
+                    </div>
+                    
+                    <div class="card hover-lift reveal delay-200">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Faculty of Arts</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            Cultivating critical thinking through literature, history, sociology, and languages.
+                        </p>
+                        <a href="courses.html" class="hover-underline" style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); color: var(--color-gold); font-weight: var(--font-medium);">View Programs →</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="section-lg" style="background-color: var(--color-cream);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Student Voices</span>
+                    <h2 class="section-title reveal delay-100">What Our Students Say</h2>
+                    <div class="divider reveal delay-200"></div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--section-gap); margin-top: var(--space-12);">
+                    
+                    <div class="testimonial reveal">
+                        <p class="testimonial-text">
+                            "The integrated coaching program was a game-changer for me. I could focus on both my PUC studies and NEET preparation without the stress of managing multiple institutions. The faculty's dedication and personalized attention made all the difference."
+                        </p>
+                        <div class="testimonial-author">Ananya Rao</div>
+                        <div class="testimonial-role">B.Sc Physics, Class of 2023 | NEET Qualifier</div>
+                    </div>
+                    
+                    <div class="testimonial reveal delay-100">
+                        <p class="testimonial-text">
+                            "The holistic approach to education here shaped not just my professional skills but my character. The emphasis on ethics, discipline, and social responsibility sets this institution apart from others."
+                        </p>
+                        <div class="testimonial-author">Rajesh Kumar</div>
+                        <div class="testimonial-role">B.Com, Class of 2022 | Placed at HDFC Bank</div>
+                    </div>
+                    
+                    <div class="testimonial reveal delay-200">
+                        <p class="testimonial-text">
+                            "The peaceful 7-acre campus and excellent infrastructure provided the perfect environment for focused study. The library and laboratory facilities are truly world-class, supporting both academic and research pursuits."
+                        </p>
+                        <div class="testimonial-author">Priya Deshmukh</div>
+                        <div class="testimonial-role">B.Sc Computer Science, Class of 2023</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Why Bipin Chikkatti College</span>
+                    <h2 class="section-title reveal delay-100">What Sets Us Apart</h2>
+                    <div class="divider reveal delay-200"></div>
+                    <p class="section-description reveal delay-300">
+                        A unique blend of academic rigor, integrated coaching, and holistic development
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--card-gap); margin-top: var(--space-12);">
+                    
+                    <div class="card-minimal reveal">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Integrated Coaching</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Unique PUC + NEET/CET/JEE coaching under one roof by experienced faculty, eliminating the need for external coaching centers and ensuring focused preparation.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-100">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">7-Acre Green Campus</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Serene learning environment away from city chaos on Mundargi Road, providing the perfect atmosphere for focused academic pursuits and personal growth.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-200">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Academic Discipline</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Strict academic standards combined with proven study methodologies ensuring consistent excellence in results and character development.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-300">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Modern Infrastructure</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            State-of-the-art laboratories, smart classrooms, and fully furnished facilities supporting advanced learning and research activities.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-400">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Student Motivation Programs</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Regular programs designed to inspire, guide, and develop students' confidence, leadership abilities, and career readiness.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-500">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Dedicated Transport</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Comprehensive transport system ensuring safe and convenient commute from all parts of Gadag and surrounding areas.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-600">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Industry Partnerships</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Strategic collaborations with leading companies and organizations providing students with internship opportunities, industry exposure, and direct placement pathways.
+                        </p>
+                    </div>
+                    
+                    <div class="card-minimal reveal delay-700">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Research Excellence</h3>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Cutting-edge research facilities and programs encouraging innovation, critical thinking, and scholarly publications in collaboration with renowned universities and research institutions.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Academic Excellence Section -->
+        <section class="section-lg" style="background-color: var(--color-cream);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: center;">
+                    <div>
+                        <span class="section-label reveal">Academic Excellence</span>
+                        <h2 class="reveal delay-100" style="margin-bottom: var(--space-6);">
+                            Research-Driven<br>Learning Excellence
+                        </h2>
+                        <div class="divider divider-left reveal delay-200"></div>
+                        <p class="reveal delay-300" style="font-size: var(--text-lg); margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            Our commitment to academic excellence is reflected in our modern pedagogy, research-driven curriculum, and consistent track record of producing top performers in university examinations and competitive entrance tests.
+                        </p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-8);">
+                            <div class="reveal delay-400">
+                                <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); margin-bottom: var(--space-2);">100+</div>
+                                <div style="color: var(--color-text-secondary);">University Toppers</div>
+                            </div>
+                            <div class="reveal delay-500">
+                                <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); margin-bottom: var(--space-2);">15+</div>
+                                <div style="color: var(--color-text-secondary);">Academic Programs</div>
+                            </div>
+                        </div>
+                        <a href="courses.html" class="btn btn-outline reveal delay-600">Explore Programs</a>
+                    </div>
+                    <div class="reveal-right image-zoom">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=900&fit=crop" alt="Students in Library" style="width: 100%; height: 600px; object-fit: cover; border: var(--border-width) solid var(--color-border);">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Leadership Section -->
+        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: center;">
+                    <div class="reveal-left">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=900&fit=crop" alt="Prof. S. Y. Chikkatti" style="width: 100%; height: 600px; object-fit: cover; border: var(--border-width) solid var(--color-border);">
+                    </div>
+                    <div>
+                        <span class="section-label reveal">Visionary Leadership</span>
+                        <h2 class="reveal delay-100" style="margin-bottom: var(--space-6);">
+                            Founded on a Vision<br>of Educational Excellence
+                        </h2>
+                        <div class="divider divider-left reveal delay-200"></div>
+                        <p class="reveal delay-300" style="font-size: var(--text-lg); margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+                            In 1994, Prof. S. Y. Chikkatti established Bipin Chikkatti College with a singular vision: to create an institution that would democratize quality education and empower students from all backgrounds to achieve their full potential.
+                        </p>
+                        <div class="card-glass reveal delay-400" style="padding: var(--space-8); margin-bottom: var(--space-8); border-left: 4px solid var(--color-gold);">
+                            <p style="font-size: var(--text-lg); font-style: italic; color: var(--color-text-primary); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+                                "Education is not merely about acquiring knowledge; it is about building character, fostering critical thinking, and preparing young minds to contribute meaningfully to society."
+                            </p>
+                            <div style="font-weight: var(--font-semibold); color: var(--color-gold);">— Prof. S. Y. Chikkatti, Founder</div>
+                        </div>
+                        <p class="reveal delay-500" style="margin-bottom: var(--space-8); line-height: var(--leading-relaxed);">
+                            Under his leadership, the institution has grown from a modest beginning to a comprehensive educational network, maintaining unwavering commitment to academic excellence, ethical values, and student-centered learning.
+                        </p>
+                        <a href="about.html" class="btn btn-outline reveal delay-600">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Student Life Section -->
+        <section class="section-lg" style="background-color: var(--color-cream);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Beyond Academics</span>
+                    <h2 class="section-title reveal delay-100">Vibrant Student Life</h2>
+                    <div class="divider reveal delay-200"></div>
+                    <p class="section-description reveal delay-300">
+                        A holistic educational experience that nurtures talents, builds character, and creates lifelong memories
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--card-gap); margin-top: var(--space-12);">
+                    
+                    <div class="card hover-lift reveal">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop" alt="Cultural Activities" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: var(--space-6); border: var(--border-width) solid var(--color-border);">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Cultural Activities</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Annual cultural festivals, music and dance competitions, drama performances, and literary events that celebrate creativity and artistic expression.
+                        </p>
+                    </div>
+                    
+                    <div class="card hover-lift reveal delay-100">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600&h=400&fit=crop" alt="Sports & Athletics" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: var(--space-6); border: var(--border-width) solid var(--color-border);">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Sports & Athletics</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="line-height: var(--leading-relaxed);">
+                            State-of-the-art sports facilities for cricket, football, basketball, athletics, and indoor games, with regular tournaments and professional coaching.
+                        </p>
+                    </div>
+                    
+                    <div class="card hover-lift reveal delay-200">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop" alt="Student Clubs" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: var(--space-6); border: var(--border-width) solid var(--color-border);">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Student Clubs</h3>
+                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
+                        <p style="line-height: var(--leading-relaxed);">
+                            Active clubs for science, technology, literature, debate, photography, and social service, providing platforms for exploration and leadership development.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Achievements Timeline Section -->
+        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Our Journey</span>
+                    <h2 class="section-title reveal delay-100">Three Decades of Excellence</h2>
+                    <div class="divider reveal delay-200"></div>
+                    <p class="section-description reveal delay-300">
+                        Milestones that mark our commitment to educational excellence and institutional growth
+                    </p>
+                </div>
+                
+                <div style="max-width: 900px; margin: var(--space-12) auto 0;">
+                    
+                    <div class="reveal" style="display: grid; grid-template-columns: 120px 1fr; gap: var(--space-8); margin-bottom: var(--space-10); padding-bottom: var(--space-10); border-bottom: var(--border-width) solid var(--color-border);">
+                        <div>
+                            <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); font-family: var(--font-serif);">1994</div>
+                        </div>
+                        <div>
+                            <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Foundation</h3>
+                            <p style="line-height: var(--leading-relaxed); color: var(--color-text-secondary);">
+                                Prof. S. Y. Chikkatti establishes Bipin Chikkatti College with a vision to provide accessible, quality education. The institution begins with Pre-University programs on a modest campus in Gadag.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal delay-100" style="display: grid; grid-template-columns: 120px 1fr; gap: var(--space-8); margin-bottom: var(--space-10); padding-bottom: var(--space-10); border-bottom: var(--border-width) solid var(--color-border);">
+                        <div>
+                            <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); font-family: var(--font-serif);">2016</div>
+                        </div>
+                        <div>
+                            <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">Expansion</h3>
+                            <p style="line-height: var(--leading-relaxed); color: var(--color-text-secondary);">
+                                Launch of Vinay Chikkatti PU College, expanding the institution's reach and introducing specialized Commerce stream programs. The campus infrastructure is significantly upgraded with modern facilities.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal delay-200" style="display: grid; grid-template-columns: 120px 1fr; gap: var(--space-8); margin-bottom: var(--space-10); padding-bottom: var(--space-10); border-bottom: var(--border-width) solid var(--color-border);">
+                        <div>
+                            <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); font-family: var(--font-serif);">2020</div>
+                        </div>
+                        <div>
+                            <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">University Affiliation</h3>
+                            <p style="line-height: var(--leading-relaxed); color: var(--color-text-secondary);">
+                                Establishment of degree college with affiliation to Karnatak University, Dharwad. Introduction of undergraduate and postgraduate programs in Science, Commerce, and Management streams.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal delay-300" style="display: grid; grid-template-columns: 120px 1fr; gap: var(--space-8);">
+                        <div>
+                            <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--color-gold); font-family: var(--font-serif);">2024</div>
+                        </div>
+                        <div>
+                            <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--color-text-primary);">30 Years Milestone</h3>
+                            <p style="line-height: var(--leading-relaxed); color: var(--color-text-secondary);">
+                                Celebrating three decades of educational excellence with over 5,000 successful alumni, 95% placement rate, and recognition as one of Gadag's premier educational institutions. The 7-acre campus now features world-class infrastructure and integrated coaching facilities.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section" style="background-color: var(--color-navy); color: var(--color-text-light); text-align: center; border-top: var(--border-width) solid var(--color-border-dark);">
+            <div class="container">
+                <div class="reveal">
+                    <span class="badge" style="border-color: var(--color-gold); color: var(--color-gold);">Admissions Open</span>
+                    <h2 style="margin-top: var(--space-6); margin-bottom: var(--space-5); font-size: clamp(2.5rem, 5vw, 4rem); color: var(--color-text-light);">
+                        Begin Your Journey<br>of Excellence
+                    </h2>
+                    <div class="divider" style="background-color: var(--color-gold);"></div>
+                    <p style="font-size: var(--text-xl); color: rgba(255, 255, 255, 0.8); margin-bottom: var(--space-8); max-width: 700px; margin-left: auto; margin-right: auto; line-height: var(--leading-relaxed);">
+                        Join a community of scholars, thinkers, and leaders. Your future begins here.
+                    </p>
+                    <a href="admissions.html" class="btn btn-gold btn-lg">Apply Now</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Bipin Chikkatti College</div>
+                    <div class="footer-tagline">A Legacy of Excellence</div>
+                    <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed);">
+                        Cultivating minds and shaping futures since 1994. Located on a 7-acre lush green campus in Gadag, Karnataka.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="admissions.html" class="footer-link">Admissions</a>
+                        <a href="faculty.html" class="footer-link">Faculty</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a href="campus.html" class="footer-link">Campus</a>
+                        <a href="placements.html" class="footer-link">Placements</a>
+                        <a href="events.html" class="footer-link">Events</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+                        Mundargi Road, Near Adavi Somapur<br>
+                        Mulgund Naka, Gadag - 582103<br>
+                        Karnataka, India
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--space-2);">Phone: +91 94480 07467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5m0 0l-7 7m7-7l7 7"/>
+        </svg>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/main-fixed.js"></script>
+    
+    <style>
+        @media (max-width: 1024px) {
+            section > div > div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: var(--space-12) !important;
+            }
+        }
+    </style>
+    
+</body>
+</html>

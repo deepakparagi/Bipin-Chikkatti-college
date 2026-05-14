@@ -1,0 +1,473 @@
+/* ============================================
+   COMPREHENSIVE RESPONSIVE SYSTEM
+   Mobile-First Premium Architecture
+   ============================================ */
+
+/* === ENHANCED BREAKPOINT SYSTEM === */
+:root {
+  /* Responsive breakpoints */
+  --bp-xs: 320px;
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1440px;
+  --bp-xxl: 1920px;
+  
+  /* Fluid typography scale */
+  --fluid-min-width: 320;
+  --fluid-max-width: 1440;
+  --fluid-screen: 100vw;
+  
+  /* Responsive spacing scale */
+  --space-fluid-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --space-fluid-sm: clamp(0.5rem, 1vw, 1rem);
+  --space-fluid-md: clamp(1rem, 2vw, 2rem);
+  --space-fluid-lg: clamp(1.5rem, 3vw, 3rem);
+  --space-fluid-xl: clamp(2rem, 4vw, 4rem);
+  --space-fluid-xxl: clamp(3rem, 6vw, 6rem);
+  
+  /* Responsive container system */
+  --container-xs: 100%;
+  --container-sm: 100%;
+  --container-md: 100%;
+  --container-lg: 1200px;
+  --container-xl: 1400px;
+  --container-xxl: 1600px;
+  
+  /* Responsive padding */
+  --container-padding-xs: 1rem;
+  --container-padding-sm: 1.5rem;
+  --container-padding-md: 2rem;
+  --container-padding-lg: 2.5rem;
+  --container-padding-xl: 3rem;
+}
+
+/* === FLUID TYPOGRAPHY SYSTEM === */
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: clamp(1.1, 1.2, 1.3);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: clamp(1.1, 1.2, 1.3);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: clamp(1.2, 1.3, 1.4);
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  line-height: clamp(1.2, 1.3, 1.4);
+}
+
+h5 {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: clamp(1.3, 1.4, 1.5);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: clamp(1.3, 1.4, 1.5);
+}
+
+p {
+  font-size: clamp(0.875rem, 1.2vw, 1.125rem);
+  line-height: clamp(1.5, 1.6, 1.8);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+/* === RESPONSIVE CONTAINER SYSTEM === */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--container-padding-xs);
+  padding-right: var(--container-padding-xs);
+  max-width: var(--container-xs);
+}
+
+/* === RESPONSIVE GRID SYSTEM === */
+.grid-responsive {
+  display: grid;
+  gap: var(--space-fluid-md);
+  grid-template-columns: 1fr;
+}
+
+.grid-auto-fit {
+  display: grid;
+  gap: var(--space-fluid-md);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-auto-fill {
+  display: grid;
+  gap: var(--space-fluid-md);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* === RESPONSIVE SECTIONS === */
+.section {
+  padding: var(--space-fluid-xl) 0;
+}
+
+.section-sm {
+  padding: var(--space-fluid-lg) 0;
+}
+
+.section-lg {
+  padding: var(--space-fluid-xxl) 0;
+}
+
+/* === RESPONSIVE CARDS === */
+.card {
+  padding: var(--space-fluid-lg);
+  margin-bottom: var(--space-fluid-md);
+  border-radius: clamp(8px, 1vw, 16px);
+}
+
+.card-minimal {
+  padding: var(--space-fluid-md) 0;
+  border-bottom-width: clamp(1px, 0.1vw, 2px);
+}
+
+/* === RESPONSIVE BUTTONS === */
+.btn {
+  padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  border-radius: clamp(4px, 0.5vw, 8px);
+  min-height: 44px; /* Touch-friendly minimum */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-lg {
+  padding: clamp(1rem, 2vw, 1.25rem) clamp(2rem, 4vw, 3rem);
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  min-height: 48px;
+}
+
+/* === RESPONSIVE NAVIGATION === */
+.navbar {
+  height: clamp(60px, 8vw, 76px);
+  padding: 0;
+}
+
+.navbar-container {
+  padding: clamp(0.75rem, 1.5vw, 1.25rem) var(--container-padding-xs);
+  height: 100%;
+}
+
+.navbar-logo img {
+  height: clamp(32px, 5vw, 45px);
+  width: auto;
+}
+
+.navbar-link {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  padding: clamp(0.5rem, 1vw, 0.75rem) 0;
+}
+
+/* === RESPONSIVE HERO SECTIONS === */
+.hero-responsive {
+  min-height: clamp(50vh, 60vh, 70vh);
+  padding: clamp(2rem, 8vw, 4rem) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: clamp(300px, 90vw, 900px);
+  text-align: center;
+  padding: 0 var(--space-fluid-md);
+}
+
+/* === RESPONSIVE STATS === */
+.stat-card {
+  padding: var(--space-fluid-lg);
+  text-align: center;
+  min-height: clamp(120px, 20vw, 180px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-number {
+  font-size: clamp(2rem, 6vw, 3.75rem);
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.stat-label {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
+
+/* === RESPONSIVE TESTIMONIALS === */
+.testimonial {
+  padding: var(--space-fluid-lg);
+  margin-bottom: var(--space-fluid-md);
+  border-radius: clamp(8px, 1vw, 16px);
+}
+
+.testimonial-text {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: clamp(1.5, 1.6, 1.8);
+  margin-bottom: var(--space-fluid-md);
+}
+
+/* === RESPONSIVE BADGES === */
+.badge {
+  padding: clamp(0.25rem, 0.5vw, 0.5rem) clamp(0.75rem, 1.5vw, 1rem);
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem);
+  border-radius: clamp(12px, 2vw, 20px);
+}
+
+/* === RESPONSIVE DIVIDERS === */
+.divider {
+  width: clamp(40px, 8vw, 80px);
+  height: clamp(1px, 0.1vw, 2px);
+  margin: var(--space-fluid-md) auto;
+}
+
+.divider-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* === RESPONSIVE IMAGES === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: clamp(8px, 1vw, 12px);
+}
+
+/* === RESPONSIVE FORMS === */
+.form-input,
+.form-textarea,
+.form-select {
+  padding: clamp(0.75rem, 1.5vw, 1rem);
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  border-radius: clamp(4px, 0.5vw, 8px);
+  min-height: 44px; /* Touch-friendly */
+}
+
+.form-textarea {
+  min-height: clamp(100px, 15vw, 150px);
+  resize: vertical;
+}
+
+/* === RESPONSIVE SPACING UTILITIES === */
+.mt-responsive { margin-top: var(--space-fluid-md); }
+.mb-responsive { margin-bottom: var(--space-fluid-md); }
+.ml-responsive { margin-left: var(--space-fluid-md); }
+.mr-responsive { margin-right: var(--space-fluid-md); }
+.mx-responsive { margin-left: var(--space-fluid-md); margin-right: var(--space-fluid-md); }
+.my-responsive { margin-top: var(--space-fluid-md); margin-bottom: var(--space-fluid-md); }
+
+.pt-responsive { padding-top: var(--space-fluid-md); }
+.pb-responsive { padding-bottom: var(--space-fluid-md); }
+.pl-responsive { padding-left: var(--space-fluid-md); }
+.pr-responsive { padding-right: var(--space-fluid-md); }
+.px-responsive { padding-left: var(--space-fluid-md); padding-right: var(--space-fluid-md); }
+.py-responsive { padding-top: var(--space-fluid-md); padding-bottom: var(--space-fluid-md); }
+
+/* === MOBILE SMALL (320px - 480px) === */
+@media (min-width: 320px) {
+  .container {
+    max-width: var(--container-xs);
+    padding-left: var(--container-padding-xs);
+    padding-right: var(--container-padding-xs);
+  }
+  
+  .grid-responsive {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .hero-responsive {
+    min-height: 50vh;
+    padding: var(--space-8) 0;
+  }
+}
+
+/* === MOBILE LARGE (481px - 767px) === */
+@media (min-width: 481px) {
+  .container {
+    padding-left: var(--container-padding-sm);
+    padding-right: var(--container-padding-sm);
+  }
+  
+  .grid-responsive {
+    gap: var(--space-6);
+  }
+  
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+/* === TABLET (768px - 1024px) === */
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-md);
+    padding-left: var(--container-padding-md);
+    padding-right: var(--container-padding-md);
+  }
+  
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+  
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .hero-responsive {
+    min-height: 60vh;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    gap: var(--space-6);
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* === LAPTOP (1025px - 1440px) === */
+@media (min-width: 1025px) {
+  .container {
+    max-width: var(--container-lg);
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
+  
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-10);
+  }
+  
+  .hero-responsive {
+    min-height: 65vh;
+  }
+}
+
+/* === DESKTOP (1441px+) === */
+@media (min-width: 1441px) {
+  .container {
+    max-width: var(--container-xl);
+    padding-left: var(--container-padding-xl);
+    padding-right: var(--container-padding-xl);
+  }
+  
+  .grid-responsive {
+    gap: var(--space-12);
+  }
+  
+  .hero-responsive {
+    min-height: 70vh;
+  }
+}
+
+/* === ULTRA-WIDE (1920px+) === */
+@media (min-width: 1920px) {
+  .container {
+    max-width: var(--container-xxl);
+  }
+  
+  .hero-responsive {
+    min-height: 75vh;
+  }
+}
+
+/* === RESPONSIVE UTILITIES === */
+.hide-mobile { display: none; }
+.hide-tablet { display: block; }
+.hide-desktop { display: block; }
+
+@media (min-width: 768px) {
+  .hide-mobile { display: block; }
+  .hide-tablet { display: none; }
+  .show-tablet { display: block; }
+}
+
+@media (min-width: 1025px) {
+  .hide-tablet { display: block; }
+  .hide-desktop { display: none; }
+  .show-desktop { display: block; }
+}
+
+/* === TOUCH-FRIENDLY INTERACTIONS === */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .card,
+  .navbar-link {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .hover-lift:hover,
+  .card:hover,
+  .btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .hover-lift:active,
+  .card:active,
+  .btn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+@media (max-width: 768px) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    animation-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  
+  .card:hover,
+  .btn:hover,
+  .stat-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  .hero-responsive,
+  .section,
+  .card,
+  .btn {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,615 @@
+/* ============================================
+   LUXURY ANIMATION SYSTEM
+   Award-Winning Premium Interactions
+   Inspired by Apple, Tesla, and Luxury Brands
+   ============================================ */
+
+/* === ADVANCED EASING CURVES === */
+:root {
+  /* Luxury brand easing functions */
+  --ease-apple: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-tesla: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-luxury-brand: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-smooth-silk: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce-subtle: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-back-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Premium timing */
+  --duration-micro: 100ms;
+  --duration-quick: 200ms;
+  --duration-smooth: 350ms;
+  --duration-elegant: 500ms;
+  --duration-luxurious: 750ms;
+  --duration-cinematic: 1000ms;
+  --duration-epic: 1500ms;
+}
+
+/* ============================================
+   MAGNETIC HOVER SYSTEM
+   Elements Follow Cursor Movement
+   ============================================ */
+
+.magnetic-hover {
+  transition: transform var(--duration-smooth) var(--ease-luxury-brand);
+  will-change: transform;
+}
+
+.magnetic-hover:hover {
+  transform: scale(1.05) translateZ(10px);
+}
+
+/* Apply magnetic effect to buttons */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  transform-style: preserve-3d;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-luxurious) var(--ease-expo-out),
+              height var(--duration-luxurious) var(--ease-expo-out);
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.btn:hover {
+  transform: translateY(-6px) scale(1.03) rotateX(5deg);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 0 60px rgba(184, 149, 106, 0.3);
+}
+
+.btn:active {
+  transform: translateY(-3px) scale(1.01);
+  transition-duration: var(--duration-quick);
+}
+
+/* ============================================
+   LIQUID MORPHING CARDS
+   Fluid Shape Transformations
+   ============================================ */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  transform-style: preserve-3d;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 243, 0.95));
+  backdrop-filter: blur(20px);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(184, 149, 106, 0.1) 0%, 
+    rgba(184, 149, 106, 0.05) 50%, 
+    rgba(184, 149, 106, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-luxurious) var(--ease-luxury-brand);
+  pointer-events: none;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(184, 149, 106, 0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-luxurious) var(--ease-luxury-brand),
+              transform var(--duration-epic) linear;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.card:hover {
+  transform: translateY(-16px) scale(1.02) rotateX(3deg) rotateY(2deg);
+  border-radius: 20px;
+  box-shadow: 
+    0 32px 64px rgba(0, 0, 0, 0.2),
+    0 16px 32px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(184, 149, 106, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   PARALLAX IMAGE SYSTEM
+   Multi-Layer Depth Effects
+   ============================================ */
+
+.image-zoom {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+}
+
+.image-zoom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(0, 0, 0, 0.1) 0%, 
+    transparent 30%, 
+    transparent 70%, 
+    rgba(184, 149, 106, 0.2) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-luxurious) var(--ease-luxury-brand);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.image-zoom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform var(--duration-luxurious) var(--ease-back-out);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.image-zoom:hover::before {
+  opacity: 1;
+}
+
+.image-zoom:hover::after {
+  transform: translate(-50%, -50%) scale(20);
+  opacity: 0;
+}
+
+.image-zoom img {
+  transition: transform var(--duration-epic) var(--ease-luxury-brand),
+              filter var(--duration-luxurious) var(--ease-smooth-silk);
+  will-change: transform, filter;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.15) rotate(2deg) translateZ(20px);
+  filter: brightness(1.1) contrast(1.1) saturate(1.2);
+}
+
+/* ============================================
+   FLOATING NAVIGATION EFFECTS
+   Weightless Interactive Elements
+   ============================================ */
+
+.navbar {
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  backdrop-filter: blur(20px);
+}
+
+.navbar.scrolled {
+  background: rgba(250, 248, 243, 0.85);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.navbar-link {
+  position: relative;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  transform-style: preserve-3d;
+}
+
+.navbar-link::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transform: translateX(-50%);
+  transition: width var(--duration-luxurious) var(--ease-back-out);
+  border-radius: 2px;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-elegant) var(--ease-luxury-brand);
+  border-radius: 8px;
+}
+
+.navbar-link:hover::before {
+  width: 100%;
+}
+
+.navbar-link:hover::after {
+  opacity: 1;
+}
+
+.navbar-link:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: var(--color-gold);
+}
+
+.navbar-logo {
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  transform-style: preserve-3d;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.08) translateY(-2px) rotateY(5deg);
+  filter: drop-shadow(0 8px 16px rgba(184, 149, 106, 0.3));
+}
+
+/* ============================================
+   LIQUID TESTIMONIAL SYSTEM
+   Flowing Content Animations
+   ============================================ */
+
+.testimonial {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 243, 0.95));
+  backdrop-filter: blur(20px);
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-gold), var(--color-gold-light));
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform var(--duration-luxurious) var(--ease-back-out);
+  border-radius: 2px;
+}
+
+.testimonial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(184, 149, 106, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--duration-luxurious) var(--ease-luxury-brand);
+  pointer-events: none;
+}
+
+.testimonial:hover::before {
+  transform: scaleY(1);
+}
+
+.testimonial:hover::after {
+  opacity: 1;
+}
+
+.testimonial:hover {
+  transform: translateX(20px) scale(1.03) rotateY(2deg);
+  box-shadow: 
+    0 24px 48px rgba(0, 0, 0, 0.15),
+    0 12px 24px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(184, 149, 106, 0.2);
+}
+
+/* ============================================
+   MORPHING STAT CARDS
+   Dynamic Number Animations
+   ============================================ */
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 243, 0.95));
+  backdrop-filter: blur(20px);
+  transform-style: preserve-3d;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(from 0deg, 
+    transparent 0deg, 
+    rgba(184, 149, 106, 0.1) 90deg, 
+    transparent 180deg, 
+    rgba(184, 149, 106, 0.05) 270deg, 
+    transparent 360deg);
+  opacity: 0;
+  transition: opacity var(--duration-luxurious) var(--ease-luxury-brand),
+              transform var(--duration-epic) linear;
+  pointer-events: none;
+}
+
+.stat-card:hover::before {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.stat-card:hover {
+  transform: translateY(-20px) scale(1.05) rotateX(5deg);
+  border-radius: 24px;
+  box-shadow: 
+    0 32px 64px rgba(0, 0, 0, 0.2),
+    0 16px 32px rgba(0, 0, 0, 0.15),
+    0 0 80px rgba(184, 149, 106, 0.3);
+}
+
+.stat-number {
+  transition: all var(--duration-luxurious) var(--ease-back-out);
+  transform-style: preserve-3d;
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.15) translateY(-8px) rotateX(10deg);
+  color: var(--color-gold-light);
+  text-shadow: 
+    0 4px 8px rgba(184, 149, 106, 0.4),
+    0 8px 16px rgba(184, 149, 106, 0.2);
+}
+
+/* ============================================
+   FLOATING BADGE SYSTEM
+   Weightless Interactive Tags
+   ============================================ */
+
+.badge {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 243, 0.95));
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+}
+
+.badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 149, 106, 0.4), transparent);
+  transition: left var(--duration-luxurious) var(--ease-luxury-brand);
+}
+
+.badge:hover::before {
+  left: 100%;
+}
+
+.badge:hover {
+  transform: scale(1.15) translateY(-4px) rotateZ(2deg);
+  box-shadow: 
+    0 12px 24px rgba(184, 149, 106, 0.3),
+    0 6px 12px rgba(184, 149, 106, 0.2);
+  border-color: var(--color-gold-light);
+}
+
+/* ============================================
+   SECTION DIVIDER ANIMATIONS
+   Elegant Separators
+   ============================================ */
+
+.divider {
+  position: relative;
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+  transform-origin: center;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(184, 149, 106, 0.6) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-luxurious) var(--ease-back-out),
+              height var(--duration-luxurious) var(--ease-back-out);
+}
+
+.divider:hover::before {
+  width: 40px;
+  height: 40px;
+}
+
+.divider:hover {
+  width: 120px;
+  background: linear-gradient(90deg, 
+    var(--color-gold), 
+    var(--color-gold-light), 
+    var(--color-gold));
+  box-shadow: 0 4px 16px rgba(184, 149, 106, 0.5);
+  transform: scaleY(2);
+}
+
+/* ============================================
+   BACK TO TOP LUXURY ANIMATION
+   ============================================ */
+
+.back-to-top {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  background: linear-gradient(135deg, var(--color-charcoal), var(--color-charcoal-light));
+  transform-style: preserve-3d;
+}
+
+.back-to-top::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-luxurious) var(--ease-back-out),
+              height var(--duration-luxurious) var(--ease-back-out);
+}
+
+.back-to-top:hover::before {
+  width: 120px;
+  height: 120px;
+}
+
+.back-to-top:hover {
+  transform: translateY(-12px) scale(1.2) rotate(10deg);
+  box-shadow: 
+    0 20px 40px rgba(184, 149, 106, 0.4),
+    0 10px 20px rgba(184, 149, 106, 0.3);
+}
+
+/* ============================================
+   THEME TOGGLE LUXURY ANIMATION
+   ============================================ */
+
+.navbar-theme-toggle {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  transform-style: preserve-3d;
+}
+
+.navbar-theme-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 0deg, 
+    rgba(184, 149, 106, 0.2), 
+    transparent, 
+    rgba(184, 149, 106, 0.2));
+  opacity: 0;
+  transition: opacity var(--duration-elegant) var(--ease-luxury-brand),
+              transform var(--duration-epic) linear;
+  border-radius: 50%;
+}
+
+.navbar-theme-toggle:hover::before {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.navbar-theme-toggle:hover {
+  transform: scale(1.15) rotate(25deg);
+  box-shadow: 0 8px 24px rgba(184, 149, 106, 0.4);
+}
+
+.navbar-theme-toggle svg {
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+}
+
+.navbar-theme-toggle:hover svg {
+  transform: scale(1.2) rotate(20deg);
+}
+
+/* ============================================
+   RESPONSIVE LUXURY ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .card:hover {
+    transform: translateY(-12px) scale(1.01);
+  }
+  
+  .btn:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-12px) scale(1.03);
+  }
+  
+  .testimonial:hover {
+    transform: translateX(12px) scale(1.02);
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .card:hover,
+  .btn:hover,
+  .stat-card:hover,
+  .testimonial:hover,
+  .image-zoom:hover img,
+  .back-to-top:hover,
+  .navbar-theme-toggle:hover,
+  .navbar-link:hover,
+  .navbar-logo:hover,
+  .badge:hover,
+  .divider:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,482 @@
+/* ============================================
+   MICRO-INTERACTIONS SYSTEM
+   Subtle Premium Details & Feedback
+   ============================================ */
+
+/* === CURSOR INTERACTION FEEDBACK === */
+.interactive-element {
+  cursor: pointer;
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+}
+
+.interactive-element:hover {
+  cursor: pointer;
+}
+
+/* === TEXT SELECTION STYLING === */
+::selection {
+  background: rgba(184, 149, 106, 0.3);
+  color: var(--color-text-primary);
+}
+
+::-moz-selection {
+  background: rgba(184, 149, 106, 0.3);
+  color: var(--color-text-primary);
+}
+
+/* === FOCUS STATES === */
+*:focus {
+  outline: none;
+}
+
+.btn:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  box-shadow: 
+    0 0 0 3px rgba(184, 149, 106, 0.3),
+    0 8px 24px rgba(184, 149, 106, 0.2);
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* === LOADING STATES === */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(184, 149, 106, 0.4), 
+    transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* === RIPPLE EFFECT === */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-elegant) var(--ease-luxury-brand),
+              height var(--duration-elegant) var(--ease-luxury-brand),
+              opacity var(--duration-elegant) var(--ease-luxury-brand);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ripple:active::before {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
+/* === FLOATING LABELS === */
+.floating-label {
+  position: relative;
+}
+
+.floating-label input,
+.floating-label textarea {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: var(--color-text-muted);
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+  pointer-events: none;
+  transform-origin: left top;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label textarea:focus + label,
+.floating-label textarea:not(:placeholder-shown) + label {
+  transform: translateY(-12px) scale(0.8);
+  color: var(--color-gold);
+}
+
+/* === PROGRESS INDICATORS === */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  border-radius: 2px;
+  transition: width var(--duration-luxurious) var(--ease-luxury-brand);
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.4), 
+    transparent);
+  animation: progress-shine 2s infinite;
+}
+
+@keyframes progress-shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* === TOOLTIP SYSTEM === */
+.tooltip {
+  position: relative;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: var(--color-charcoal);
+  color: var(--color-text-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: var(--text-sm);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+  z-index: 1000;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  border: 4px solid transparent;
+  border-top-color: var(--color-charcoal);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* === ACCORDION ANIMATIONS === */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--duration-luxurious) var(--ease-luxury-brand),
+              padding var(--duration-luxurious) var(--ease-luxury-brand),
+              opacity var(--duration-elegant) var(--ease-luxury-brand);
+  opacity: 0;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  opacity: 1;
+  padding: var(--space-6) 0;
+}
+
+.accordion-icon {
+  transition: transform var(--duration-elegant) var(--ease-luxury-brand);
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* === MODAL ANIMATIONS === */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+  z-index: 1000;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: var(--color-cream);
+  border-radius: 16px;
+  padding: var(--space-8);
+  max-width: 500px;
+  width: 90%;
+  transform: scale(0.8) translateY(40px);
+  transition: transform var(--duration-elegant) var(--ease-back-out);
+}
+
+.modal.active .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+/* === DROPDOWN ANIMATIONS === */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-2);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px) scale(0.95);
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown-item {
+  padding: var(--space-3) var(--space-4);
+  border-radius: 8px;
+  transition: all var(--duration-quick) var(--ease-luxury-brand);
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: rgba(184, 149, 106, 0.1);
+  transform: translateX(4px);
+}
+
+/* === TAB ANIMATIONS === */
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab-button {
+  padding: var(--space-4) var(--space-6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+}
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transition: transform var(--duration-smooth) var(--ease-luxury-brand);
+}
+
+.tab-button.active::after,
+.tab-button:hover::after {
+  transform: scaleX(1);
+}
+
+.tab-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--duration-smooth) var(--ease-luxury-brand);
+}
+
+.tab-content.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* === SCROLL ANIMATIONS === */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+}
+
+.scroll-reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all var(--duration-luxurious) var(--ease-luxury-brand);
+}
+
+.scroll-reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* === STAGGER ANIMATIONS === */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--duration-elegant) var(--ease-luxury-brand);
+}
+
+.stagger-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-item:nth-child(1) { transition-delay: 0ms; }
+.stagger-item:nth-child(2) { transition-delay: 100ms; }
+.stagger-item:nth-child(3) { transition-delay: 200ms; }
+.stagger-item:nth-child(4) { transition-delay: 300ms; }
+.stagger-item:nth-child(5) { transition-delay: 400ms; }
+.stagger-item:nth-child(6) { transition-delay: 500ms; }
+
+/* === PULSE ANIMATIONS === */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* === BREATHING ANIMATION === */
+.breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* === FLOATING ANIMATION === */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* === GLOW EFFECT === */
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, var(--color-gold), var(--color-gold-light));
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity var(--duration-elegant) var(--ease-luxury-brand);
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.glow:hover::before {
+  opacity: 0.7;
+}
+
+/* === TYPEWRITER EFFECT === */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid var(--color-gold);
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--color-gold); }
+}
