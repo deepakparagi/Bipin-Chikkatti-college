@@ -6,17 +6,22 @@
     <meta name="description" content="Admission process, eligibility criteria, and application details for Bipin Chikkatti College">
     <title>Admissions | Bipin Chikkatti College</title>
     
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
     
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="premium-loader">
-            <div class="loader-brand">Bipin Chikkatti College</div>
-            <div class="loader-line"></div>
-            <div class="loader-tagline">A Legacy of Excellence</div>
+    <!-- Primary Entry Loader -->
+    <div class="primary-loader">
+        <div class="primary-loader-content">
+            <div class="primary-loader-line-top"></div>
+            <h1 class="primary-loader-brand">Bipin Chikkatti College</h1>
+            <p class="primary-loader-tagline">A Legacy of Excellence</p>
+            <div class="primary-loader-line-bottom"></div>
+            <span class="primary-loader-year">Est. 1994</span>
         </div>
     </div>
     
@@ -29,8 +34,10 @@
         </div>
     </div>
     
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
     
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
@@ -41,7 +48,7 @@
                 <li><a href="index.html" class="navbar-link">Home</a></li>
                 <li><a href="about.html" class="navbar-link">About</a></li>
                 <li><a href="courses.html" class="navbar-link">Courses</a></li>
-                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
+                <li><a href="admissions.html" class="navbar-link active">Admissions</a></li>
                 <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
                 <li><a href="campus.html" class="navbar-link">Campus</a></li>
                 <li><a href="placements.html" class="navbar-link">Placements</a></li>
@@ -71,18 +78,19 @@
         </div>
     </nav>
     
+    <!-- Main Content -->
     <main class="page-wrapper">
         
         <!-- Hero Section -->
-        <section style="min-height: 45vh; display: flex; align-items: center; background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
+        <section class="section flex items-center" style="min-height: 40vh; background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="text-center container-narrow">
                     <span class="badge reveal">Join Us</span>
-                    <h1 class="reveal delay-100" style="margin-top: var(--space-8); margin-bottom: var(--space-6);">
+                    <h1 class="reveal delay-100 display-2" style="margin-top: var(--s-md); margin-bottom: var(--s-sm);">
                         Admissions
                     </h1>
                     <div class="divider reveal delay-200"></div>
-                    <p class="reveal delay-300" style="font-size: var(--text-xl); color: var(--color-text-secondary); line-height: var(--leading-relaxed);">
+                    <p class="reveal delay-300 lead" style="color: var(--color-text-secondary);">
                         Begin your journey of academic excellence and personal growth
                     </p>
                 </div>
@@ -90,46 +98,52 @@
         </section>
         
         <!-- Admission Process -->
-        <section class="section-lg" style="background-color: var(--color-cream);">
+        <section class="section-lg">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header text-center container-narrow">
                     <span class="section-label reveal">How to Apply</span>
                     <h2 class="section-title reveal delay-100">Admission Process</h2>
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div style="max-width: 900px; margin: 0 auto; margin-top: var(--space-16);">
+                <div class="container-narrow mt-responsive">
                     
-                    <div class="card-minimal reveal">
-                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: var(--space-6);">
-                            <div style="width: 60px; height: 60px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">1</div>
+                    <div class="card-minimal reveal mb-responsive">
+                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
+                            <div class="flex items-center justify-center">
+                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">1</div>
+                            </div>
                             <div>
-                                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Application Submission</h3>
-                                <p style="line-height: var(--leading-relaxed);">
+                                <h3 class="display-3 mb-responsive">Application Submission</h3>
+                                <p>
                                     Complete the online application form or visit the college office to obtain a physical application. Submit all required documents including academic transcripts, identification proof, and passport-sized photographs.
                                 </p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="card-minimal reveal delay-100">
-                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: var(--space-6);">
-                            <div style="width: 60px; height: 60px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">2</div>
+                    <div class="card-minimal reveal delay-100 mb-responsive">
+                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
+                            <div class="flex items-center justify-center">
+                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">2</div>
+                            </div>
                             <div>
-                                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Document Verification</h3>
-                                <p style="line-height: var(--leading-relaxed);">
+                                <h3 class="display-3 mb-responsive">Document Verification</h3>
+                                <p>
                                     Our admission committee will verify your submitted documents and eligibility. Original documents must be presented for verification during the final stage of admission.
                                 </p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="card-minimal reveal delay-200">
-                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: var(--space-6);">
-                            <div style="width: 60px; height: 60px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">3</div>
+                    <div class="card-minimal reveal delay-200 mb-responsive">
+                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
+                            <div class="flex items-center justify-center">
+                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">3</div>
+                            </div>
                             <div>
-                                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Merit List Publication</h3>
-                                <p style="line-height: var(--leading-relaxed);">
+                                <h3 class="display-3 mb-responsive">Merit List Publication</h3>
+                                <p>
                                     Based on academic performance and eligibility criteria, merit lists will be published on the college website and notice board. Selected candidates will be notified via email and SMS.
                                 </p>
                             </div>
@@ -137,11 +151,13 @@
                     </div>
                     
                     <div class="card-minimal reveal delay-300">
-                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: var(--space-6);">
-                            <div style="width: 60px; height: 60px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">4</div>
+                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
+                            <div class="flex items-center justify-center">
+                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">4</div>
+                            </div>
                             <div>
-                                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Fee Payment & Enrollment</h3>
-                                <p style="line-height: var(--leading-relaxed);">
+                                <h3 class="display-3 mb-responsive">Fee Payment & Enrollment</h3>
+                                <p>
                                     Selected candidates must complete fee payment within the specified deadline and complete the enrollment process to secure their admission.
                                 </p>
                             </div>
@@ -155,18 +171,18 @@
         <!-- Eligibility Criteria -->
         <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header text-center container-narrow">
                     <span class="section-label reveal">Requirements</span>
                     <h2 class="section-title reveal delay-100">Eligibility Criteria</h2>
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-8); margin-top: var(--space-16);">
+                <div class="grid grid-smart mt-responsive">
                     
                     <div class="card reveal">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">B.Sc. Programs</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <ul style="line-height: var(--leading-loose); padding-left: var(--space-6);">
+                        <h3 class="display-3 mb-responsive">B.Sc. Programs</h3>
+                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
+                        <ul class="list-dots">
                             <li>10+2 with Science stream</li>
                             <li>Minimum 50% aggregate marks</li>
                             <li>Mathematics/Biology as per program</li>
@@ -175,9 +191,9 @@
                     </div>
                     
                     <div class="card reveal delay-100">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">B.Com. Programs</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <ul style="line-height: var(--leading-loose); padding-left: var(--space-6);">
+                        <h3 class="display-3 mb-responsive">B.Com. Programs</h3>
+                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
+                        <ul class="list-dots">
                             <li>10+2 from any recognized board</li>
                             <li>Minimum 45% aggregate marks</li>
                             <li>Commerce background preferred</li>
@@ -186,9 +202,9 @@
                     </div>
                     
                     <div class="card reveal delay-200">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">B.A. Programs</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <ul style="line-height: var(--leading-loose); padding-left: var(--space-6);">
+                        <h3 class="display-3 mb-responsive">B.A. Programs</h3>
+                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
+                        <ul class="list-dots">
                             <li>10+2 from any recognized board</li>
                             <li>Minimum 45% aggregate marks</li>
                             <li>No stream restrictions</li>
@@ -201,75 +217,82 @@
         </section>
         
         <!-- Required Documents -->
-        <section class="section-lg" style="background-color: var(--color-cream);">
+        <section class="section-lg">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div class="section-header">
+                <div class="container-narrow">
+                    <div class="section-header text-center">
                         <span class="section-label reveal">Documentation</span>
                         <h2 class="section-title reveal delay-100">Required Documents</h2>
                         <div class="divider reveal delay-200"></div>
                     </div>
                     
-                    <div class="card reveal delay-300" style="padding: var(--space-12);">
-                        <ul style="line-height: var(--leading-loose); font-size: var(--text-lg);">
-                            <li style="margin-bottom: var(--space-4);">✓ Completed application form</li>
-                            <li style="margin-bottom: var(--space-4);">✓ 10th and 12th mark sheets and certificates</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Transfer certificate from previous institution</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Migration certificate (if applicable)</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Caste certificate (if applicable)</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Income certificate for scholarship</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Aadhar card copy</li>
-                            <li style="margin-bottom: var(--space-4);">✓ Passport-sized photographs (6 copies)</li>
+                    <div class="card-glass reveal delay-300" style="padding: var(--s-lg); border: var(--border-width) solid var(--color-border);">
+                        <ul class="list-dots lead">
+                            <li style="margin-bottom: var(--s-sm);"> Completed application form</li>
+                            <li style="margin-bottom: var(--s-sm);"> 10th and 12th mark sheets and certificates</li>
+                            <li style="margin-bottom: var(--s-sm);"> Transfer certificate from previous institution</li>
+                            <li style="margin-bottom: var(--s-sm);"> Migration certificate (if applicable)</li>
+                            <li style="margin-bottom: var(--s-sm);"> Caste certificate (if applicable)</li>
+                            <li style="margin-bottom: var(--s-sm);"> Income certificate for scholarship</li>
+                            <li style="margin-bottom: var(--s-sm);"> Aadhar card copy</li>
+                            <li> Passport-sized photographs (6 copies)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         
-        <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div>
-                        <div class="footer-brand">Bipin Chikkatti College</div>
-                        <div class="footer-tagline">A Legacy of Excellence</div>
-                        <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed);">
-                            Cultivating minds and shaping futures since 1994.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="footer-title">Quick Links</h4>
-                        <div class="footer-links">
-                            <a href="about.html" class="footer-link">About Us</a>
-                            <a href="courses.html" class="footer-link">Academics</a>
-                            <a href="admissions.html" class="footer-link">Admissions</a>
-                            <a href="faculty.html" class="footer-link">Faculty</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="footer-title">Resources</h4>
-                        <div class="footer-links">
-                            <a href="campus.html" class="footer-link">Campus</a>
-                            <a href="placements.html" class="footer-link">Placements</a>
-                            <a href="events.html" class="footer-link">Events</a>
-                            <a href="contact.html" class="footer-link">Contact</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="footer-title">Contact</h4>
-                        <p style="color: rgba(255, 255, 255, 0.7); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
-                            Mundargi Road, Near Adavi Somapur<br>Gadag, Karnataka 582103
-                        </p>
-                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--space-2);">Phone: +91 94480 07467</p>
-                        <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="section" style="background-color: var(--color-navy); color: var(--color-text-light);">
+        <div class="container">
+            <div class="grid grid-cols-1 grid-cols-2-md grid-cols-4-lg gap-lg">
+                <div>
+                    <div class="footer-brand">Bipin Chikkatti College</div>
+                    <div class="footer-tagline">A Legacy of Excellence</div>
+                    <p style="color: rgba(255, 255, 255, 0.6);">
+                        Cultivating minds and shaping futures since 1994. Located on a 7-acre lush green campus in Gadag, Karnataka.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="admissions.html" class="footer-link">Admissions</a>
+                        <a href="faculty.html" class="footer-link">Faculty</a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+                
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a href="campus.html" class="footer-link">Campus</a>
+                        <a href="placements.html" class="footer-link">Placements</a>
+                        <a href="events.html" class="footer-link">Events</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-sm);">
+                        Mundargi Road, Near Adavi Somapur<br>
+                        Mulgund Naka, Gadag - 582103<br>
+                        Karnataka, India
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: +91 94480 07467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
                 </div>
             </div>
-        </footer>
-        
-    </main>
+            
+            <div class="footer-bottom" style="margin-top: var(--s-xl); padding-top: var(--s-md);">
+                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
     <button class="back-to-top" aria-label="Back to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

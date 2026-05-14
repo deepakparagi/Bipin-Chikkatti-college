@@ -9,11 +9,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: clamp(60px, 8vw, 80px);
     background-color: var(--color-ivory);
     border-bottom: 1px solid var(--color-border);
     z-index: 9999;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navbar.scrolled {
@@ -30,9 +30,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--container-padding);
-  height: 80px;
-  max-width: 1440px;
+  padding: 0 var(--container-px);
+  height: 100%;
+  max-width: var(--container-wide);
   margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .navbar-logo img {
-  height: 54px;
+  height: clamp(36px, 5vw, 54px);
   width: auto;
   object-fit: contain;
 }
@@ -230,28 +230,30 @@
 }
 
 /* === RESPONSIVE === */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .navbar-toggle {
     display: flex;
   }
   
   .navbar-menu {
     position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-color: var(--color-cream);
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: var(--color-ivory);
     flex-direction: column;
     align-items: flex-start;
-    padding: var(--space-10) var(--container-padding);
-    gap: var(--space-2);
-    transform: translateX(-100%);
+    padding: var(--s-giant) var(--container-px);
+    gap: var(--s-sm);
+    transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-    transition: transform 0.5s cubic-bezier(0.85, 0, 0.15, 1), visibility 0.5s;
+    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1), visibility 0.6s;
     z-index: 999;
     overflow-y: auto;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
   }
 
   [data-theme="dark"] .navbar-menu {
@@ -262,22 +264,21 @@
     transform: translateX(0);
     visibility: visible;
     pointer-events: auto;
-}
+  }
   
   .navbar-link {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     width: 100%;
-    padding: var(--space-4) 0;
-    border-bottom: 1px solid var(--color-border);
+    padding: var(--s-md) 0;
+    border-bottom: 1px solid var(--color-border-light);
+    font-family: var(--font-serif);
+    text-transform: none;
+    letter-spacing: normal;
   }
 
   .navbar-cta {
-    margin: var(--space-8) 0;
+    margin: var(--s-lg) 0;
     width: 100%;
     text-align: center;
-  }
-  
-  .navbar-theme-toggle {
-    margin: var(--space-4) 0;
   }
 }

@@ -7,6 +7,7 @@
 /* === IMPORTS === */
 @import url('variables.css');
 @import url('reset.css');
+@import url('layout-system.css');
 @import url('base.css');
 @import url('navigation.css');
 @import url('components.css');
@@ -16,11 +17,8 @@
 @import url('micro-interactions.css');
 @import url('scroll-animations.css');
 @import url('premium-hover-effects.css');
-@import url('spacing-optimization.css');
-@import url('spacing-fix.css');
-@import url('responsive-system.css');
-@import url('mobile-enhanced.css');
 @import url('dark-theme.css');
+
 
 /* === PAGE WRAPPER === */
 .page-wrapper {

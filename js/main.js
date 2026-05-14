@@ -148,6 +148,61 @@ function initBackToTop() {
 }
 
 /**
+ * Counter Animation Logic
+ */
+function initCounters() {
+    const counters = document.querySelectorAll('[data-counter]');
+    if (counters.length === 0) return;
+
+    const animateCounter = (element) => {
+        const target = parseInt(element.getAttribute('data-counter'));
+        const duration = 2000;
+        const startTime = performance.now();
+        
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = Math.floor(target * easeOutQuart);
+            
+            element.textContent = current.toLocaleString();
+            
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                element.textContent = target.toLocaleString();
+            }
+        };
+        
+        requestAnimationFrame(animate);
+    };
+
+    const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    counters.forEach(counter => {
+        // Set initial state to 0 if it's empty or just 0
+        if (!counter.textContent || counter.textContent === '0') {
+            counter.textContent = '0';
+        }
+        observer.observe(counter);
+    });
+}
+
+/**
  * Initialize Everything
  */
 function init() {
@@ -155,6 +210,7 @@ function init() {
     initThemeToggle();
     initNavbar();
     initBackToTop();
+    initCounters();
     
     console.log("Stability initialized successfully.");
 }
