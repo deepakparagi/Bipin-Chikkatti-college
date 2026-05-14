@@ -36,6 +36,9 @@
   --container-max: 1440px;
   --container-narrow: 900px;
   --container-wide: 1600px;
+
+  /* --- NAVBAR HEIGHT --- */
+  --navbar-height: clamp(60px, 8vw, 80px);
 }
 
 /* ============================================
@@ -69,6 +72,10 @@
 .section-lg {
   padding-top: var(--section-py-lg);
   padding-bottom: var(--section-py-lg);
+}
+
+.page-wrapper {
+  padding-top: var(--navbar-height);
 }
 
 /* ============================================
