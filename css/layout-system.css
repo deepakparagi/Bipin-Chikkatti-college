@@ -78,6 +78,17 @@
   padding-top: var(--navbar-height);
 }
 
+.hero-section {
+  min-height: clamp(400px, 80vh, 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--s-xl);
+  padding-bottom: var(--s-xl);
+  position: relative;
+  overflow: hidden;
+}
+
 /* ============================================
    GRID SYSTEM
    ============================================ */
