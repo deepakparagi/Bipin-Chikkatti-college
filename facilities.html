@@ -7,21 +7,21 @@
     <title>Campus & Facilities | Bipin Chikkatti College</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=20260515">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
     
-    <!-- Primary Entry Loader -->
+    <!-- Primary Entry Loader (Cinematic Welcome) -->
     <div class="primary-loader">
         <div class="primary-loader-content">
             <div class="primary-loader-line-top"></div>
-            <h1 class="primary-loader-brand">Bipin Chikkatti College</h1>
-            <p class="primary-loader-tagline">A Legacy of Excellence</p>
+            <h1 class="primary-loader-brand">Bipin Chikkatti Degree College</h1>
+            <p class="primary-loader-tagline">Excellence in Computer Applications</p>
             <div class="primary-loader-line-bottom"></div>
-            <span class="primary-loader-year">Est. 1994</span>
+            <span class="primary-loader-year">Est. 2019</span>
         </div>
     </div>
     
@@ -46,29 +46,31 @@
             
             <ul class="navbar-menu">
                 <li><a href="index.html" class="navbar-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link">About</a></li>
-                <li><a href="courses.html" class="navbar-link">Courses</a></li>
+                <li><a href="about.html" class="navbar-link">About Us</a></li>
+                <li><a href="academics.html" class="navbar-link">Academics</a></li>
                 <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
                 <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
-                <li><a href="campus.html" class="navbar-link active">Campus</a></li>
-                <li><a href="placements.html" class="navbar-link">Placements</a></li>
-                <li><a href="events.html" class="navbar-link">Events</a></li>
-                <li>
-                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
-                        <div class="theme-switch-track">
-                            <div class="theme-switch-handle">
-                                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                                </svg>
-                                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </button>
-                </li>
-                <li><a href="contact.html" class="navbar-cta">Contact</a></li>
+                <li><a href="facilities.html" class="navbar-link">Facilities</a></li>
+                <li><a href="disclosure.html" class="navbar-link">Mandatory Public Disclosure</a></li>
+                <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+                <li class="mobile-only-nav" style="margin-top: 20px; width: 100%;"><a href="contact.html" class="navbar-cta" style="width: 100%;">Contact Us</a></li>
             </ul>
+            
+            <div class="navbar-controls hidden-mobile">
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                    <div class="theme-switch-track">
+                        <div class="theme-switch-handle">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <a href="contact.html" class="navbar-cta">Contact</a>
+            </div>
             
             <button class="navbar-toggle">
                 <span></span>
@@ -123,7 +125,7 @@
             </div>
         </section>
         
-        <!-- Facilities Grid -->
+        <!-- Facilities Detailed Layout -->
         <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
                 <div class="section-header text-center container-narrow">
@@ -132,41 +134,52 @@
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div class="grid grid-smart mt-responsive">
-                    
-                    <div class="card hover-lift reveal">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" alt="Smart Classrooms" class="img-cover aspect-video" style="border: var(--border-width) solid var(--color-border);">
+                <!-- Facility 1: Smart Classrooms -->
+                <div class="grid grid-cols-1 grid-cols-2-md gap-lg items-center mt-responsive mb-responsive">
+                    <div class="reveal-left">
+                        <div class="card-image-wrapper" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" alt="Smart Classrooms" class="img-cover">
                         </div>
-                        <h3 class="display-3 mb-responsive">Smart Classrooms</h3>
+                    </div>
+                    <div class="reveal-right">
+                        <h3 class="mb-responsive">Smart Classrooms</h3>
                         <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p>
-                            Well-maintained, spacious classrooms equipped with modern teaching aids including projectors, audio systems, and comfortable seating arrangements to enhance the learning experience.
+                        <p class="lead">
+                            Our spacious, well-lit classrooms are equipped with modern teaching aids, interactive projectors, and high-quality audio systems. We maintain a limited student-to-faculty ratio to ensure personalized attention and foster an engaging learning environment.
                         </p>
                     </div>
-                    
-                    <div class="card hover-lift reveal delay-100">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop" alt="Science Laboratories" class="img-cover aspect-video" style="border: var(--border-width) solid var(--color-border);">
-                        </div>
-                        <h3 class="display-3 mb-responsive">Advanced Laboratories</h3>
+                </div>
+
+                <!-- Facility 2: Advanced Labs -->
+                <div class="grid grid-cols-1 grid-cols-2-md gap-lg items-center mt-responsive mb-responsive">
+                    <div class="order-2-md reveal-left">
+                        <h3 class="mb-responsive">Advanced Computer Labs</h3>
                         <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p>
-                            Fully furnished laboratories for Physics, Chemistry, Computer Science, and Biology with latest equipment and safety measures, enabling hands-on practical learning.
+                        <p class="lead">
+                            State-of-the-art computer laboratories equipped with high-end workstations, the latest software packages, and dedicated high-speed internet. These labs provide the perfect environment for coding, software development, and specialized tech projects.
                         </p>
                     </div>
-                    
-                    <div class="card hover-lift reveal delay-200">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop" alt="Library" class="img-cover aspect-video" style="border: var(--border-width) solid var(--color-border);">
+                    <div class="order-1-md reveal-right">
+                        <div class="card-image-wrapper" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop" alt="Computer Laboratories" class="img-cover">
                         </div>
-                        <h3 class="display-3 mb-responsive">Central Library</h3>
+                    </div>
+                </div>
+
+                <!-- Facility 3: Central Library -->
+                <div class="grid grid-cols-1 grid-cols-2-md gap-lg items-center mt-responsive">
+                    <div class="reveal-left">
+                        <div class="card-image-wrapper" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop" alt="Library" class="img-cover">
+                        </div>
+                    </div>
+                    <div class="reveal-right">
+                        <h3 class="mb-responsive">Central Library</h3>
                         <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p>
-                            Extensive collection of books, journals, and digital resources. Quiet reading areas and research sections provide an ideal environment for academic exploration.
+                        <p class="lead">
+                            A comprehensive collection of books, international journals, and digital resources covering every aspect of computer applications and technology. The library includes quiet reading zones and collaborative research areas for focused study.
                         </p>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -182,31 +195,31 @@
                 
                 <div class="grid grid-cols-1 grid-cols-2-lg gap-lg mt-responsive">
                     
-                    <div class="card-glass reveal p-responsive" style="border: var(--border-width) solid var(--color-border);">
-                        <h3 class="display-3 mb-responsive">Transport System</h3>
+                    <div class="card hover-lift reveal p-responsive">
+                        <h3 class="card-title mb-responsive">Transport System</h3>
                         <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="lead mb-responsive">
+                        <p class="mb-responsive">
                             Dedicated transport system connecting various parts of Gadag and surrounding areas, ensuring safe and convenient commute for students.
                         </p>
-                        <ul class="list-dots">
+                        <ul class="list-dots small">
                             <li>Multiple routes covering Gadag city</li>
-                            <li>Well-maintained buses</li>
-                            <li>Experienced drivers</li>
+                            <li>Well-maintained fleet of buses</li>
+                            <li>Experienced & verified drivers</li>
                             <li>Affordable transport fees</li>
                         </ul>
                     </div>
                     
-                    <div class="card-glass reveal delay-100 p-responsive" style="border: var(--border-width) solid var(--color-border);">
-                        <h3 class="display-3 mb-responsive">Hostel Facilities</h3>
+                    <div class="card hover-lift reveal delay-100 p-responsive">
+                        <h3 class="card-title mb-responsive">Hostel Facilities</h3>
                         <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="lead mb-responsive">
+                        <p class="mb-responsive">
                             Separate hostel facilities for male and female students with modern amenities and 24/7 security for a safe living environment.
                         </p>
-                        <ul class="list-dots">
+                        <ul class="list-dots small">
                             <li>Comfortable accommodation</li>
                             <li>Nutritious mess facilities</li>
                             <li>24/7 security and supervision</li>
-                            <li>Study rooms and common areas</li>
+                            <li>Dedicated study areas</li>
                         </ul>
                     </div>
                     
@@ -219,12 +232,12 @@
     <!-- Footer -->
     <footer class="section" style="background-color: var(--color-navy); color: var(--color-text-light);">
         <div class="container">
-            <div class="grid grid-cols-1 grid-cols-2-md grid-cols-4-lg gap-lg">
+            <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">Bipin Chikkatti College</div>
-                    <div class="footer-tagline">A Legacy of Excellence</div>
+                    <div class="footer-brand">Bipin Chikkatti Degree College</div>
+                    <div class="footer-tagline">Excellence in Computer Applications</div>
                     <p style="color: rgba(255, 255, 255, 0.6);">
-                        Cultivating minds and shaping futures since 1994. Located on a 7-acre lush green campus in Gadag, Karnataka.
+                        Shaping IT professionals since 2019. Affiliated to Karnatak University, Dharwad. Approved by AICTE, New Delhi.
                     </p>
                 </div>
                 
@@ -232,7 +245,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <div class="footer-links">
                         <a href="about.html" class="footer-link">About Us</a>
-                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="academics.html" class="footer-link">Academics</a>
                         <a href="admissions.html" class="footer-link">Admissions</a>
                         <a href="faculty.html" class="footer-link">Faculty</a>
                     </div>
@@ -241,27 +254,27 @@
                 <div>
                     <h4 class="footer-title">Resources</h4>
                     <div class="footer-links">
-                        <a href="campus.html" class="footer-link">Campus</a>
-                        <a href="placements.html" class="footer-link">Placements</a>
-                        <a href="events.html" class="footer-link">Events</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="facilities.html" class="footer-link">Facilities</a>
+                        <a href="disclosure.html" class="footer-link">Mandatory Public Disclosure</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
                     </div>
                 </div>
                 
                 <div>
                     <h4 class="footer-title">Contact</h4>
                     <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-sm);">
-                        Mundargi Road, Near Adavi Somapur<br>
-                        Mulgund Naka, Gadag - 582103<br>
+                        Mundargi Road,<br>
+                        Gadag<br>
                         Karnataka, India
                     </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: +91 94480 07467</p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: 9113887715, 9448007467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkatticollege@gmail.com</p>
                 </div>
             </div>
             
             <div class="footer-bottom" style="margin-top: var(--s-xl); padding-top: var(--s-md);">
-                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+                <p>© 2026 Bipin Chikkatti Degree College. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -272,7 +285,7 @@
         </svg>
     </button>
     
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260515"></script>
     
 </body>
 </html>

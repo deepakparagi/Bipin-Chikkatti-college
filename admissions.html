@@ -7,21 +7,21 @@
     <title>Admissions | Bipin Chikkatti College</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=20260515">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
     
-    <!-- Primary Entry Loader -->
+    <!-- Primary Entry Loader (Cinematic Welcome) -->
     <div class="primary-loader">
         <div class="primary-loader-content">
             <div class="primary-loader-line-top"></div>
-            <h1 class="primary-loader-brand">Bipin Chikkatti College</h1>
-            <p class="primary-loader-tagline">A Legacy of Excellence</p>
+            <h1 class="primary-loader-brand">Bipin Chikkatti Degree College</h1>
+            <p class="primary-loader-tagline">Excellence in Computer Applications</p>
             <div class="primary-loader-line-bottom"></div>
-            <span class="primary-loader-year">Est. 1994</span>
+            <span class="primary-loader-year">Est. 2019</span>
         </div>
     </div>
     
@@ -46,29 +46,31 @@
             
             <ul class="navbar-menu">
                 <li><a href="index.html" class="navbar-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link">About</a></li>
-                <li><a href="courses.html" class="navbar-link">Courses</a></li>
-                <li><a href="admissions.html" class="navbar-link active">Admissions</a></li>
+                <li><a href="about.html" class="navbar-link">About Us</a></li>
+                <li><a href="academics.html" class="navbar-link">Academics</a></li>
+                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
                 <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
-                <li><a href="campus.html" class="navbar-link">Campus</a></li>
-                <li><a href="placements.html" class="navbar-link">Placements</a></li>
-                <li><a href="events.html" class="navbar-link">Events</a></li>
-                <li>
-                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
-                        <div class="theme-switch-track">
-                            <div class="theme-switch-handle">
-                                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                                </svg>
-                                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </button>
-                </li>
-                <li><a href="contact.html" class="navbar-cta">Contact</a></li>
+                <li><a href="facilities.html" class="navbar-link">Facilities</a></li>
+                <li><a href="disclosure.html" class="navbar-link">Mandatory Public Disclosure</a></li>
+                <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+                <li class="mobile-only-nav" style="margin-top: 20px; width: 100%;"><a href="contact.html" class="navbar-cta" style="width: 100%;">Contact Us</a></li>
             </ul>
+            
+            <div class="navbar-controls hidden-mobile">
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                    <div class="theme-switch-track">
+                        <div class="theme-switch-handle">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <a href="contact.html" class="navbar-cta">Contact</a>
+            </div>
             
             <button class="navbar-toggle">
                 <span></span>
@@ -79,139 +81,185 @@
     </nav>
     
     <!-- Main Content -->
-    <main class="page-wrapper">
+    <main class="page-wrapper admissions-page">
         
         <!-- Hero Section -->
-        <section class="hero-section" style="background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
+        <section class="hero-section admissions-hero">
             <div class="container">
-                <div class="text-center container-narrow">
-                    <span class="badge reveal">Join Us</span>
-                    <h1 class="reveal delay-100 display-2" style="margin-top: var(--s-md); margin-bottom: var(--s-sm);">
-                        Admissions
-                    </h1>
-                    <div class="divider reveal delay-200"></div>
-                    <p class="reveal delay-300 lead" style="color: var(--color-text-secondary);">
-                        Begin your journey of academic excellence and personal growth
-                    </p>
+                <div class="admissions-hero-grid">
+                    <div class="admissions-hero-content">
+                        <span class="admissions-eyebrow reveal">Admissions 2026</span>
+                        <h1 class="admissions-hero-title reveal delay-100">
+                            Begin your BCA journey with clarity, confidence, and momentum.
+                        </h1>
+                        <p class="admissions-hero-copy reveal delay-200">
+                            Join a focused computer applications program built for students who want rigorous foundations, hands-on learning, and a calm path from application to enrollment.
+                        </p>
+                        <div class="admissions-hero-actions reveal delay-300">
+                            <a href="contact.html" class="btn btn-primary btn-lg">Apply Now</a>
+                            <a href="#admission-process" class="btn btn-outline btn-lg">View Process</a>
+                        </div>
+                        <div class="admissions-hero-proof reveal delay-400">
+                            <div class="admissions-proof-item">
+                                <span class="admissions-proof-value">3</span>
+                                <span class="admissions-proof-label">Year BCA Program</span>
+                            </div>
+                            <div class="admissions-proof-item">
+                                <span class="admissions-proof-value">45%</span>
+                                <span class="admissions-proof-label">Minimum Eligibility</span>
+                            </div>
+                            <div class="admissions-proof-item">
+                                <span class="admissions-proof-value">2019</span>
+                                <span class="admissions-proof-label">Established</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admissions-visual reveal-scale delay-200" aria-hidden="true">
+                        <div class="admissions-visual-card">
+                            <div class="admissions-visual-scene">
+                                <div class="admissions-arch"></div>
+                                <div class="admissions-portrait-block"></div>
+                                <div class="admissions-scene-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admissions-floating-panel">
+                            <span>Guided Enrollment</span>
+                            <strong>One clear path from enquiry to seat confirmation.</strong>
+                            <p>Our office helps students understand eligibility, documents, scholarships, and fee timelines before final enrollment.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <!-- Admission Process -->
-        <section class="section-lg">
+        <section class="section-lg" id="admission-process">
             <div class="container">
                 <div class="section-header text-center container-narrow">
                     <span class="section-label reveal">How to Apply</span>
-                    <h2 class="section-title reveal delay-100">Admission Process</h2>
-                    <div class="divider reveal delay-200"></div>
+                    <h2 class="section-title reveal delay-100">A Simple, Transparent Admission Flow</h2>
+                    <p class="section-description reveal delay-200">
+                        Four structured steps keep the process calm, predictable, and easy to complete.
+                    </p>
                 </div>
                 
-                <div class="container-narrow mt-responsive">
-                    
-                    <div class="card-minimal reveal mb-responsive">
-                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
-                            <div class="flex items-center justify-center">
-                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">1</div>
-                            </div>
-                            <div>
-                                <h3 class="display-3 mb-responsive">Application Submission</h3>
-                                <p>
-                                    Complete the online application form or visit the college office to obtain a physical application. Submit all required documents including academic transcripts, identification proof, and passport-sized photographs.
-                                </p>
-                            </div>
+                <div class="admissions-process">
+                    <article class="process-step text-center reveal">
+                        <div class="process-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <path d="M14 2v6h6"/>
+                                <path d="M9 15h6"/>
+                                <path d="M9 11h2"/>
+                            </svg>
                         </div>
-                    </div>
-                    
-                    <div class="card-minimal reveal delay-100 mb-responsive">
-                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
-                            <div class="flex items-center justify-center">
-                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">2</div>
-                            </div>
-                            <div>
-                                <h3 class="display-3 mb-responsive">Document Verification</h3>
-                                <p>
-                                    Our admission committee will verify your submitted documents and eligibility. Original documents must be presented for verification during the final stage of admission.
-                                </p>
-                            </div>
+                        <div>
+                            <span class="process-number">Step 01</span>
+                            <h3>Submit Application</h3>
+                            <p>Complete the form online or visit the college office with your basic academic and identity details.</p>
                         </div>
-                    </div>
-                    
-                    <div class="card-minimal reveal delay-200 mb-responsive">
-                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
-                            <div class="flex items-center justify-center">
-                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">3</div>
-                            </div>
-                            <div>
-                                <h3 class="display-3 mb-responsive">Merit List Publication</h3>
-                                <p>
-                                    Based on academic performance and eligibility criteria, merit lists will be published on the college website and notice board. Selected candidates will be notified via email and SMS.
-                                </p>
-                            </div>
+                    </article>
+
+                    <article class="process-step text-center reveal delay-100">
+                        <div class="process-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+                            </svg>
                         </div>
-                    </div>
-                    
-                    <div class="card-minimal reveal delay-300">
-                        <div class="grid grid-cols-1 grid-cols-2-md gap-md items-center">
-                            <div class="flex items-center justify-center">
-                                <div style="width: 80px; height: 80px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-4xl); font-family: var(--font-serif); font-weight: var(--font-bold); color: var(--color-gold);">4</div>
-                            </div>
-                            <div>
-                                <h3 class="display-3 mb-responsive">Fee Payment & Enrollment</h3>
-                                <p>
-                                    Selected candidates must complete fee payment within the specified deadline and complete the enrollment process to secure their admission.
-                                </p>
-                            </div>
+                        <div>
+                            <span class="process-number">Step 02</span>
+                            <h3>Verify Documents</h3>
+                            <p>The admissions team reviews marks cards, certificates, and category or scholarship records where applicable.</p>
                         </div>
-                    </div>
-                    
+                    </article>
+
+                    <article class="process-step text-center reveal delay-200">
+                        <div class="process-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 5h18"/>
+                                <path d="M7 12h10"/>
+                                <path d="M10 19h4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="process-number">Step 03</span>
+                            <h3>Merit Review</h3>
+                            <p>Eligible applications are assessed as per university norms and admission committee guidance.</p>
+                        </div>
+                    </article>
+
+                    <article class="process-step text-center reveal delay-300">
+                        <div class="process-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="process-number">Step 04</span>
+                            <h3>Confirm Enrollment</h3>
+                            <p>Complete fee payment and final enrollment formalities within the communicated timeline.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
         
         <!-- Eligibility Criteria -->
-        <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
+        <section class="section-lg admissions-section-muted">
             <div class="container">
-                <div class="section-header text-center container-narrow">
-                    <span class="section-label reveal">Requirements</span>
-                    <h2 class="section-title reveal delay-100">Eligibility Criteria</h2>
-                    <div class="divider reveal delay-200"></div>
-                </div>
-                
-                <div class="grid grid-smart mt-responsive">
-                    
-                    <div class="card reveal">
-                        <h3 class="display-3 mb-responsive">B.Sc. Programs</h3>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <ul class="list-dots">
-                            <li>10+2 with Science stream</li>
-                            <li>Minimum 50% aggregate marks</li>
-                            <li>Mathematics/Biology as per program</li>
-                            <li>Age: 17-25 years</li>
-                        </ul>
+                <div class="admissions-split">
+                    <div class="admissions-sticky-note reveal-left">
+                        <span class="section-label">Eligibility</span>
+                        <h2 class="section-title">Clear criteria for a focused BCA cohort.</h2>
+                        <p>
+                            The program welcomes students from Science, Commerce, and Arts streams who meet university eligibility norms and are ready to build a future in computing.
+                        </p>
                     </div>
-                    
-                    <div class="card reveal delay-100">
-                        <h3 class="display-3 mb-responsive">B.Com. Programs</h3>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <ul class="list-dots">
-                            <li>10+2 from any recognized board</li>
-                            <li>Minimum 45% aggregate marks</li>
-                            <li>Commerce background preferred</li>
-                            <li>Age: 17-25 years</li>
-                        </ul>
+
+                    <div class="eligibility-grid">
+                        <article class="eligibility-card reveal">
+                            <h3>Academic Qualification</h3>
+                            <ul class="premium-checklist">
+                                <li>10+2, PUC, or equivalent from a recognized board.</li>
+                                <li>Minimum 45% aggregate marks in qualifying examination.</li>
+                                <li>40% aggregate eligibility for reserved categories.</li>
+                            </ul>
+                        </article>
+
+                        <article class="eligibility-card reveal delay-100">
+                            <h3>Eligible Streams</h3>
+                            <ul class="premium-checklist">
+                                <li>Science stream students may apply.</li>
+                                <li>Commerce stream students may apply.</li>
+                                <li>Arts stream students may apply as per university norms.</li>
+                            </ul>
+                        </article>
+
+                        <article class="eligibility-card reveal delay-200">
+                            <h3>Admission Review</h3>
+                            <ul class="premium-checklist">
+                                <li>Applications are checked for completeness and eligibility.</li>
+                                <li>Original documents are required during final verification.</li>
+                                <li>Selections follow institutional and university guidelines.</li>
+                            </ul>
+                        </article>
+
+                        <article class="eligibility-card reveal delay-300">
+                            <h3>Student Support</h3>
+                            <ul class="premium-checklist">
+                                <li>Guidance is available for application completion.</li>
+                                <li>Scholarship-related documentation can be reviewed.</li>
+                                <li>Office staff help clarify fee and enrollment timelines.</li>
+                            </ul>
+                        </article>
                     </div>
-                    
-                    <div class="card reveal delay-200">
-                        <h3 class="display-3 mb-responsive">B.A. Programs</h3>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <ul class="list-dots">
-                            <li>10+2 from any recognized board</li>
-                            <li>Minimum 45% aggregate marks</li>
-                            <li>No stream restrictions</li>
-                            <li>Age: 17-25 years</li>
-                        </ul>
-                    </div>
-                    
                 </div>
             </div>
         </section>
@@ -219,24 +267,150 @@
         <!-- Required Documents -->
         <section class="section-lg">
             <div class="container">
-                <div class="container-narrow">
-                    <div class="section-header text-center">
-                        <span class="section-label reveal">Documentation</span>
-                        <h2 class="section-title reveal delay-100">Required Documents</h2>
-                        <div class="divider reveal delay-200"></div>
+                <div class="section-header text-center container-narrow">
+                    <span class="section-label reveal">Documentation</span>
+                    <h2 class="section-title reveal delay-100">Documents Required</h2>
+                    <p class="section-description reveal delay-200">
+                        Keep these ready before final verification to make your enrollment experience smooth.
+                    </p>
+                </div>
+                
+                <div class="documents-grid">
+                    <article class="document-card reveal">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                        </div>
+                        <h3>Application Form</h3>
+                        <p>Completed and signed application form with accurate contact details.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-100">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5z"/><path d="M8 7h7"/><path d="M8 11h7"/></svg>
+                        </div>
+                        <h3>Marks Cards</h3>
+                        <p>10th and 12th marks sheets and passing certificates.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-200">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h6"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg>
+                        </div>
+                        <h3>Transfer Certificate</h3>
+                        <p>Original transfer certificate from the previous institution.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-300">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><path d="M4 21h16"/></svg>
+                        </div>
+                        <h3>Migration Certificate</h3>
+                        <p>Required for students from applicable boards or universities.</p>
+                    </article>
+
+                    <article class="document-card reveal">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.2 2 6.8L12 16l-6.5 4 2-6.8L2 9h7z"/></svg>
+                        </div>
+                        <h3>Category Certificate</h3>
+                        <p>Caste or category certificate where reservation benefits apply.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-100">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><path d="M6 7v12h12V7"/><path d="M9 12h6"/></svg>
+                        </div>
+                        <h3>Income Certificate</h3>
+                        <p>Needed for scholarship and financial support consideration.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-200">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4"/><path d="M7 13h7"/><circle cx="17" cy="12" r="2"/></svg>
+                        </div>
+                        <h3>Aadhar Card</h3>
+                        <p>Clear copy of the student's Aadhar card for identity records.</p>
+                    </article>
+
+                    <article class="document-card reveal delay-300">
+                        <div class="document-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7 20a5 5 0 0 1 10 0"/></svg>
+                        </div>
+                        <h3>Photographs</h3>
+                        <p>Six recent passport-sized photographs for admission records.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Fees -->
+        <section class="section-lg admissions-section-muted">
+            <div class="container">
+                <div class="section-header text-center container-narrow">
+                    <span class="section-label reveal">Fees & Support</span>
+                    <h2 class="section-title reveal delay-100">Structured Information for Confident Decisions</h2>
+                    <p class="section-description reveal delay-200">
+                        Speak with the admissions office for the current academic-year fee confirmation, payment schedule, and scholarship guidance.
+                    </p>
+                </div>
+
+                <div class="fees-layout">
+                    <article class="fee-card reveal">
+                        <h3>Fee Consultation</h3>
+                        <p>Final course fees are confirmed by the college office during admission counseling.</p>
+                        <div class="fee-row">
+                            <span>Program</span>
+                            <strong>Bachelor of Computer Applications</strong>
+                        </div>
+                        <div class="fee-row">
+                            <span>Duration</span>
+                            <strong>3 Years / 6 Semesters</strong>
+                        </div>
+                        <div class="fee-row">
+                            <span>Payment Mode</span>
+                            <strong>As per office guidance</strong>
+                        </div>
+                        <div class="fee-row">
+                            <span>Enrollment</span>
+                            <strong>After document verification</strong>
+                        </div>
+                    </article>
+
+                    <article class="fee-card fee-card-featured reveal delay-100">
+                        <span class="section-label">Scholarship Support</span>
+                        <h3>Bring your certificates. We will help you understand eligibility.</h3>
+                        <p>Students may enquire about applicable government or institutional support during admission counseling.</p>
+                        <div class="scholarship-list">
+                            <div class="scholarship-item">
+                                <strong>Category Benefits</strong>
+                                <span>Submit valid category certificates where applicable.</span>
+                            </div>
+                            <div class="scholarship-item">
+                                <strong>Income-Based Support</strong>
+                                <span>Income certificate may be required for scholarship review.</span>
+                            </div>
+                            <div class="scholarship-item">
+                                <strong>Office Guidance</strong>
+                                <span>Admissions staff can explain the document flow and timelines.</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions CTA -->
+        <section class="admissions-cta-section">
+            <div class="container">
+                <div class="admissions-cta-panel reveal">
+                    <div>
+                        <span class="section-label">Take the Next Step</span>
+                        <h2>Secure your path into computer applications.</h2>
+                        <p>Connect with the admissions office, confirm your documents, and move forward with a clear enrollment plan.</p>
                     </div>
-                    
-                    <div class="card-glass reveal delay-300" style="padding: var(--s-lg); border: var(--border-width) solid var(--color-border);">
-                        <ul class="list-dots lead">
-                            <li style="margin-bottom: var(--s-sm);"> Completed application form</li>
-                            <li style="margin-bottom: var(--s-sm);"> 10th and 12th mark sheets and certificates</li>
-                            <li style="margin-bottom: var(--s-sm);"> Transfer certificate from previous institution</li>
-                            <li style="margin-bottom: var(--s-sm);"> Migration certificate (if applicable)</li>
-                            <li style="margin-bottom: var(--s-sm);"> Caste certificate (if applicable)</li>
-                            <li style="margin-bottom: var(--s-sm);"> Income certificate for scholarship</li>
-                            <li style="margin-bottom: var(--s-sm);"> Aadhar card copy</li>
-                            <li> Passport-sized photographs (6 copies)</li>
-                        </ul>
+                    <div class="admissions-cta-actions">
+                        <a href="contact.html" class="btn btn-gold btn-lg">Start Application</a>
+                        <a href="tel:9113887715" class="btn btn-outline btn-lg" style="color: var(--color-text-light); border-color: rgba(255,255,255,0.55);">Call Admissions</a>
                     </div>
                 </div>
             </div>
@@ -247,12 +421,12 @@
     <!-- Footer -->
     <footer class="section" style="background-color: var(--color-navy); color: var(--color-text-light);">
         <div class="container">
-            <div class="grid grid-cols-1 grid-cols-2-md grid-cols-4-lg gap-lg">
+            <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">Bipin Chikkatti College</div>
-                    <div class="footer-tagline">A Legacy of Excellence</div>
+                    <div class="footer-brand">Bipin Chikkatti Degree College</div>
+                    <div class="footer-tagline">Excellence in Computer Applications</div>
                     <p style="color: rgba(255, 255, 255, 0.6);">
-                        Cultivating minds and shaping futures since 1994. Located on a 7-acre lush green campus in Gadag, Karnataka.
+                        Shaping IT professionals since 2019. Affiliated to Karnatak University, Dharwad. Approved by AICTE, New Delhi.
                     </p>
                 </div>
                 
@@ -260,7 +434,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <div class="footer-links">
                         <a href="about.html" class="footer-link">About Us</a>
-                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="academics.html" class="footer-link">Academics</a>
                         <a href="admissions.html" class="footer-link">Admissions</a>
                         <a href="faculty.html" class="footer-link">Faculty</a>
                     </div>
@@ -269,27 +443,27 @@
                 <div>
                     <h4 class="footer-title">Resources</h4>
                     <div class="footer-links">
-                        <a href="campus.html" class="footer-link">Campus</a>
-                        <a href="placements.html" class="footer-link">Placements</a>
-                        <a href="events.html" class="footer-link">Events</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="facilities.html" class="footer-link">Facilities</a>
+                        <a href="disclosure.html" class="footer-link">Mandatory Public Disclosure</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
                     </div>
                 </div>
                 
                 <div>
                     <h4 class="footer-title">Contact</h4>
                     <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-sm);">
-                        Mundargi Road, Near Adavi Somapur<br>
-                        Mulgund Naka, Gadag - 582103<br>
+                        Mundargi Road,<br>
+                        Gadag<br>
                         Karnataka, India
                     </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: +91 94480 07467</p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: 9113887715, 9448007467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkatticollege@gmail.com</p>
                 </div>
             </div>
             
             <div class="footer-bottom" style="margin-top: var(--s-xl); padding-top: var(--s-md);">
-                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+                <p>© 2026 Bipin Chikkatti Degree College. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -300,7 +474,7 @@
         </svg>
     </button>
     
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260515"></script>
     
 </body>
 </html>

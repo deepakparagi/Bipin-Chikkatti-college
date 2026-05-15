@@ -3,26 +3,25 @@
    Professional Asset Caching Strategy
    ============================================ */
 
-const CACHE_NAME = 'bipin-chikkatti-college-v1.0.0';
-const STATIC_CACHE = 'static-assets-v1';
-const DYNAMIC_CACHE = 'dynamic-content-v1';
+const CACHE_NAME = 'bipin-chikkatti-college-v1.0.1';
+const STATIC_CACHE = 'static-assets-v2';
+const DYNAMIC_CACHE = 'dynamic-content-v2';
 
 // Assets to cache immediately
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/about.html',
-  '/courses.html',
+  '/academics.html',
   '/admissions.html',
   '/faculty.html',
-  '/campus.html',
-  '/placements.html',
-  '/events.html',
+  '/facilities.html',
+  '/disclosure.html',
+  '/gallery.html',
   '/contact.html',
-  '/css/production-optimized.css',
-  '/js/main-fixed.js',
+  '/css/main.css',
+  '/js/main.js',
   '/images/logo.svg',
-  '/manifest.json'
 ];
 
 // Dynamic assets to cache on request

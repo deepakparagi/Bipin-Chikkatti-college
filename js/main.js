@@ -60,6 +60,7 @@ function initThemeToggle() {
 
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
+    themeToggle.setAttribute('aria-pressed', savedTheme === 'dark' ? 'true' : 'false');
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
@@ -67,6 +68,7 @@ function initThemeToggle() {
         
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
+        themeToggle.setAttribute('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
     });
 }
 

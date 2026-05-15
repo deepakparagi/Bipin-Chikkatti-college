@@ -6,17 +6,19 @@
     <meta name="description" content="Contact Bipin Chikkatti College - Get in touch with us for admissions and inquiries">
     <title>Contact Us | Bipin Chikkatti College</title>
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=20260515">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
     
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="premium-loader">
-            <div class="loader-brand">Bipin Chikkatti College</div>
-            <div class="loader-line"></div>
-            <div class="loader-tagline">A Legacy of Excellence</div>
+    <!-- Primary Entry Loader (Cinematic Welcome) -->
+    <div class="primary-loader">
+        <div class="primary-loader-content">
+            <div class="primary-loader-line-top"></div>
+            <h1 class="primary-loader-brand">Bipin Chikkatti Degree College</h1>
+            <p class="primary-loader-tagline">Excellence in Computer Applications</p>
+            <div class="primary-loader-line-bottom"></div>
+            <span class="primary-loader-year">Est. 2019</span>
         </div>
     </div>
     
@@ -29,9 +31,11 @@
         </div>
     </div>
     
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
     
-        <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
                 <img src="images/logo.svg" alt="Bipin Chikkatti College Logo">
@@ -39,29 +43,31 @@
             
             <ul class="navbar-menu">
                 <li><a href="index.html" class="navbar-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link">About</a></li>
-                <li><a href="courses.html" class="navbar-link">Courses</a></li>
+                <li><a href="about.html" class="navbar-link">About Us</a></li>
+                <li><a href="academics.html" class="navbar-link">Academics</a></li>
                 <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
                 <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
-                <li><a href="campus.html" class="navbar-link">Campus</a></li>
-                <li><a href="placements.html" class="navbar-link">Placements</a></li>
-                <li><a href="events.html" class="navbar-link">Events</a></li>
-                                <li>
-                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
-                        <div class="theme-switch-track">
-                            <div class="theme-switch-handle">
-                                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                                </svg>
-                                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </button>
-                </li>
-                <li><a href="contact.html" class="navbar-cta">Contact</a></li>
+                <li><a href="facilities.html" class="navbar-link">Facilities</a></li>
+                <li><a href="disclosure.html" class="navbar-link">Mandatory Public Disclosure</a></li>
+                <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+                <li class="mobile-only-nav" style="margin-top: 20px; width: 100%;"><a href="contact.html" class="navbar-cta" style="width: 100%;">Contact Us</a></li>
             </ul>
+            
+            <div class="navbar-controls hidden-mobile">
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                    <div class="theme-switch-track">
+                        <div class="theme-switch-handle">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <a href="contact.html" class="navbar-cta">Contact</a>
+            </div>
             
             <button class="navbar-toggle">
                 <span></span>
@@ -74,15 +80,15 @@
     <main class="page-wrapper">
         
         <!-- Hero Section -->
-        <section style="min-height: 45vh; display: flex; align-items: center; background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">>
+        <section class="hero-section" style="background-color: var(--color-ivory); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="text-center container-narrow">
                     <span class="badge reveal">Get in Touch</span>
-                    <h1 class="reveal delay-100" style="margin-top: var(--space-8); margin-bottom: var(--space-6);">
+                    <h1 class="reveal delay-100 display-2" style="margin-top: var(--s-md); margin-bottom: var(--s-sm);">
                         Contact Us
                     </h1>
                     <div class="divider reveal delay-200"></div>
-                    <p class="reveal delay-300" style="font-size: var(--text-xl); color: var(--color-text-secondary); line-height: var(--leading-relaxed);">
+                    <p class="reveal delay-300 lead" style="color: var(--color-text-secondary);">
                         We're here to answer your questions and guide you on your academic journey
                     </p>
                 </div>
@@ -90,50 +96,47 @@
         </section>
         
         <!-- Contact Information & Form -->
-        <section class="section-lg" style="background-color: var(--color-cream);">
+        <section class="section-lg" style="background-color: var(--color-ivory);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: start;">
+                <div class="grid grid-cols-1 grid-cols-2-md gap-lg">
                     
                     <!-- Contact Information -->
                     <div>
                         <span class="section-label reveal">Reach Out</span>
-                        <h2 class="reveal delay-100" style="margin-bottom: var(--space-6); font-size: var(--text-4xl);">
+                        <h2 class="section-title reveal delay-100">
                             Let's Connect
                         </h2>
                         <div class="divider divider-left reveal delay-200"></div>
-                        <p class="reveal delay-300" style="font-size: var(--text-lg); margin-bottom: var(--space-10); line-height: var(--leading-relaxed);">
+                        <p class="reveal delay-300 mb-responsive">
                             Whether you're a prospective student, parent, or partner, we welcome your inquiries and look forward to hearing from you.
                         </p>
                         
-                        <div class="reveal delay-400" style="margin-bottom: var(--space-8);">
-                            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: var(--color-gold); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-semibold);">Address</h3>
-                            <p style="line-height: var(--leading-relaxed); font-size: var(--text-lg);">
-                                Mundargi Road, Near Adavi Somapur<br>
-                                Mulgund Naka, Gadag - 582103<br>
+                        <div class="reveal delay-400 mb-responsive">
+                            <h3 class="card-title">Address</h3>
+                            <p>
+                                Mundargi Road,<br>
+                                Gadag<br>
                                 Karnataka, India
                             </p>
-                            <p style="margin-top: var(--space-4); line-height: var(--leading-relaxed); color: var(--color-text-muted);">
-                                (Next to Telco, Mundargi Road)
+                        </div>
+                        
+                        <div class="reveal delay-500 mb-responsive">
+                            <h3 class="card-title">Phone</h3>
+                            <p>
+                                9113887715, 9448007467
                             </p>
                         </div>
                         
-                        <div class="reveal delay-500" style="margin-bottom: var(--space-8);">
-                            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: var(--color-gold); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-semibold);">Phone</h3>
-                            <p style="line-height: var(--leading-relaxed); font-size: var(--text-lg);">
-                                +91 94480 07467
-                            </p>
-                        </div>
-                        
-                        <div class="reveal delay-600" style="margin-bottom: var(--space-8);">
-                            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: var(--color-gold); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-semibold);">Email</h3>
-                            <p style="line-height: var(--leading-relaxed); font-size: var(--text-lg);">
-                                chikkattigoi@gmail.com
+                        <div class="reveal delay-600 mb-responsive">
+                            <h3 class="card-title">Email</h3>
+                            <p>
+                                chikkatticollege@gmail.com
                             </p>
                         </div>
                         
                         <div class="reveal delay-700">
-                            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: var(--color-gold); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-semibold);">Office Hours</h3>
-                            <p style="line-height: var(--leading-relaxed); font-size: var(--text-lg);">
+                            <h3 class="card-title">Office Hours</h3>
+                            <p>
                                 Monday - Saturday: 9:00 AM - 5:00 PM<br>
                                 Sunday: Closed
                             </p>
@@ -141,43 +144,42 @@
                     </div>
                     
                     <!-- Contact Form -->
-                    <div class="card reveal delay-300" style="padding: var(--space-12);">
-                        <h3 style="font-size: var(--text-3xl); margin-bottom: var(--space-8);">Send Us a Message</h3>
+                    <div class="card reveal delay-300 p-responsive">
+                        <h3 class="card-title mb-responsive">Send Us a Message</h3>
                         
                         <form data-validate>
-                            <div class="form-group">
+                            <div class="form-group mb-responsive">
                                 <label class="form-label" for="name">Full Name</label>
                                 <input type="text" id="name" class="form-input" required placeholder="Enter your full name">
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group mb-responsive">
                                 <label class="form-label" for="email">Email Address</label>
                                 <input type="email" id="email" class="form-input" required placeholder="your.email@example.com">
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group mb-responsive">
                                 <label class="form-label" for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="form-input" required placeholder="+91 XXXXX XXXXX">
+                                <input type="tel" id="phone" class="form-input" required placeholder="9113887715">
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group mb-responsive">
                                 <label class="form-label" for="subject">Subject</label>
                                 <select id="subject" class="form-select" required>
                                     <option value="">Select a subject</option>
-                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="admissions">BCA Admissions</option>
                                     <option value="courses">Course Information</option>
                                     <option value="facilities">Campus Facilities</option>
-                                    <option value="placements">Placements</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group mb-responsive">
                                 <label class="form-label" for="message">Message</label>
                                 <textarea id="message" class="form-textarea" required placeholder="Write your message here..."></textarea>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                         </form>
                     </div>
                     
@@ -188,13 +190,13 @@
         <!-- Map Section -->
         <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header text-center container-narrow">
                     <span class="section-label reveal">Find Us</span>
                     <h2 class="section-title reveal delay-100">Campus Location</h2>
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div class="reveal delay-300" style="margin-top: var(--space-16); border: var(--border-width) solid var(--color-border); overflow: hidden;">
+                <div class="reveal delay-300 mt-responsive" style="border: var(--border-width) solid var(--color-border); overflow: hidden;">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.5!2d75.6!3d15.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI0JzAwLjAiTiA3NcKwMzYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
                         width="100%" 
@@ -206,8 +208,8 @@
                     </iframe>
                 </div>
                 
-                <div style="margin-top: var(--space-12); text-align: center;">
-                    <p class="reveal delay-400" style="font-size: var(--text-lg); line-height: var(--leading-relaxed); margin-bottom: var(--space-6);">
+                <div class="text-center mt-responsive">
+                    <p class="reveal delay-400 lead mb-responsive">
                         Our campus is conveniently located on Mundargi Road, easily accessible from all parts of Gadag and surrounding areas.
                     </p>
                     <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline reveal delay-500">Get Directions</a>
@@ -216,49 +218,49 @@
         </section>
         
         <!-- Quick Contact Cards -->
-        <section class="section-lg" style="background-color: var(--color-cream);">
+        <section class="section-lg" style="background-color: var(--color-ivory);">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header text-center container-narrow">
                     <span class="section-label reveal">Departments</span>
                     <h2 class="section-title reveal delay-100">Contact by Department</h2>
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); margin-top: var(--space-16);">
+                <div class="grid grid-smart mt-responsive">
                     
                     <div class="card hover-lift reveal">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Admissions Office</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
+                        <h3 class="card-title">Admissions Office</h3>
+                        <div class="divider divider-left" style="margin: var(--s-sm) 0;"></div>
+                        <p class="mb-responsive">
                             For admission inquiries, application status, and enrollment procedures.
                         </p>
                         <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Phone:</strong> +91 94480 07467<br>
+                            <strong>Phone:</strong> 9113887715<br>
                             <strong>Email:</strong> admissions@bccgadag.edu.in
                         </p>
                     </div>
                     
                     <div class="card hover-lift reveal delay-100">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Academic Office</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
+                        <h3 class="card-title">Academic Office</h3>
+                        <div class="divider divider-left" style="margin: var(--s-sm) 0;"></div>
+                        <p class="mb-responsive">
                             For course information, curriculum details, and academic queries.
                         </p>
                         <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Phone:</strong> +91 94480 07467<br>
+                            <strong>Phone:</strong> 9448007467<br>
                             <strong>Email:</strong> academics@bccgadag.edu.in
                         </p>
                     </div>
                     
                     <div class="card hover-lift reveal delay-200">
-                        <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Placement Cell</h3>
-                        <div class="divider divider-left" style="margin: var(--space-4) 0;"></div>
-                        <p style="margin-bottom: var(--space-4); line-height: var(--leading-relaxed);">
-                            For placement opportunities, career guidance, and industry partnerships.
+                        <h3 class="card-title">Administration</h3>
+                        <div class="divider divider-left" style="margin: var(--s-sm) 0;"></div>
+                        <p class="mb-responsive">
+                            For general administration, scholarships, and institutional queries.
                         </p>
                         <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Phone:</strong> +91 94480 07467<br>
-                            <strong>Email:</strong> placements@bccgadag.edu.in
+                            <strong>Phone:</strong> 9113887715<br>
+                            <strong>Email:</strong> admin@bccgadag.edu.in
                         </p>
                     </div>
                     
@@ -284,47 +286,52 @@
         
     </main>
     
-    <footer>
+    <!-- Footer -->
+    <footer class="section" style="background-color: var(--color-navy); color: var(--color-text-light);">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">Bipin Chikkatti College</div>
-                    <div class="footer-tagline">A Legacy of Excellence</div>
-                    <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed);">
-                        Cultivating minds and shaping futures since 1994.
+                    <div class="footer-brand">Bipin Chikkatti Degree College</div>
+                    <div class="footer-tagline">Excellence in Computer Applications</div>
+                    <p style="color: rgba(255, 255, 255, 0.6);">
+                        Shaping IT professionals since 2019. Affiliated to Karnatak University, Dharwad. Approved by AICTE, New Delhi.
                     </p>
                 </div>
+                
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
                     <div class="footer-links">
                         <a href="about.html" class="footer-link">About Us</a>
-                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="academics.html" class="footer-link">Academics</a>
                         <a href="admissions.html" class="footer-link">Admissions</a>
                         <a href="faculty.html" class="footer-link">Faculty</a>
                     </div>
                 </div>
+                
                 <div>
                     <h4 class="footer-title">Resources</h4>
                     <div class="footer-links">
-                        <a href="campus.html" class="footer-link">Campus</a>
-                        <a href="placements.html" class="footer-link">Placements</a>
-                        <a href="events.html" class="footer-link">Events</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="facilities.html" class="footer-link">Facilities</a>
+                        <a href="disclosure.html" class="footer-link">Mandatory Public Disclosure</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
                     </div>
                 </div>
+                
                 <div>
                     <h4 class="footer-title">Contact</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
-                        Mundargi Road, Near Adavi Somapur<br>
-                        Mulgund Naka, Gadag - 582103<br>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-sm);">
+                        Mundargi Road,<br>
+                        Gadag<br>
                         Karnataka, India
                     </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--space-2);">Phone: +91 94480 07467</p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: 9113887715, 9448007467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkatticollege@gmail.com</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+            
+            <div class="footer-bottom" style="margin-top: var(--s-xl); padding-top: var(--s-md);">
+                <p>© 2026 Bipin Chikkatti Degree College. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -335,19 +342,9 @@
         </svg>
     </button>
     
-    <script src="js/main.js"></script>
-    
-    <style>
-        @media (max-width: 1024px) {
-            section > div > div[style*="grid-template-columns: 1fr 1fr"] {
-                grid-template-columns: 1fr !important;
-                gap: var(--space-12) !important;
-            }
-        }
-    </style>
+    <script src="js/main.js?v=20260515"></script>
     
 </body>
 </html>
-
 
 

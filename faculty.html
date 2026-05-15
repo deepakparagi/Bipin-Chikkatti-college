@@ -7,21 +7,21 @@
     <title>Faculty | Bipin Chikkatti College</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=20260515">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
     
-    <!-- Primary Entry Loader -->
+    <!-- Primary Entry Loader (Cinematic Welcome) -->
     <div class="primary-loader">
         <div class="primary-loader-content">
             <div class="primary-loader-line-top"></div>
-            <h1 class="primary-loader-brand">Bipin Chikkatti College</h1>
-            <p class="primary-loader-tagline">A Legacy of Excellence</p>
+            <h1 class="primary-loader-brand">Bipin Chikkatti Degree College</h1>
+            <p class="primary-loader-tagline">Excellence in Computer Applications</p>
             <div class="primary-loader-line-bottom"></div>
-            <span class="primary-loader-year">Est. 1994</span>
+            <span class="primary-loader-year">Est. 2019</span>
         </div>
     </div>
     
@@ -46,29 +46,31 @@
             
             <ul class="navbar-menu">
                 <li><a href="index.html" class="navbar-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link">About</a></li>
-                <li><a href="courses.html" class="navbar-link">Courses</a></li>
+                <li><a href="about.html" class="navbar-link">About Us</a></li>
+                <li><a href="academics.html" class="navbar-link">Academics</a></li>
                 <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
-                <li><a href="faculty.html" class="navbar-link active">Faculty</a></li>
-                <li><a href="campus.html" class="navbar-link">Campus</a></li>
-                <li><a href="placements.html" class="navbar-link">Placements</a></li>
-                <li><a href="events.html" class="navbar-link">Events</a></li>
-                <li>
-                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
-                        <div class="theme-switch-track">
-                            <div class="theme-switch-handle">
-                                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                                </svg>
-                                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </button>
-                </li>
-                <li><a href="contact.html" class="navbar-cta">Contact</a></li>
+                <li><a href="faculty.html" class="navbar-link">Faculty</a></li>
+                <li><a href="facilities.html" class="navbar-link">Facilities</a></li>
+                <li><a href="disclosure.html" class="navbar-link">Mandatory Public Disclosure</a></li>
+                <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+                <li class="mobile-only-nav" style="margin-top: 20px; width: 100%;"><a href="contact.html" class="navbar-cta" style="width: 100%;">Contact Us</a></li>
             </ul>
+            
+            <div class="navbar-controls hidden-mobile">
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                    <div class="theme-switch-track">
+                        <div class="theme-switch-handle">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <a href="contact.html" class="navbar-cta">Contact</a>
+            </div>
             
             <button class="navbar-toggle">
                 <span></span>
@@ -98,7 +100,7 @@
         </section>
         
         <!-- Faculty Introduction -->
-        <section class="section-lg">
+        <section class="section-lg faculty-intro-section">
             <div class="container">
                 <div class="container-narrow text-center">
                     <p class="reveal lead">
@@ -108,106 +110,88 @@
             </div>
         </section>
         
-        <!-- Science Faculty -->
+        <!-- BCA Faculty -->
         <section class="section-lg" style="background-color: var(--color-ivory); border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border);">
             <div class="container">
                 <div class="section-header text-center container-narrow">
-                    <span class="section-label reveal">Science & Technology</span>
-                    <h2 class="section-title reveal delay-100">Faculty of Science</h2>
+                    <span class="section-label reveal">Computer Applications</span>
+                    <h2 class="section-title reveal delay-100">BCA Faculty</h2>
                     <div class="divider reveal delay-200"></div>
                 </div>
                 
-                <div class="grid grid-smart mt-responsive">
+                <div class="grid grid-cols-1 grid-cols-2-md grid-cols-4-lg gap-md mt-responsive faculty-grid">
                     
-                    <div class="card hover-lift reveal">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://i.pravatar.cc/400?img=33" alt="Dr. Rajesh Kumar" class="img-cover aspect-portrait" style="border: var(--border-width) solid var(--color-border);">
+                    <article class="faculty-card reveal">
+                        <div class="faculty-card-media">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&h=1000&fit=crop" alt="Prof. Ramesh K" class="img-cover">
+                            <span class="faculty-card-number">01</span>
                         </div>
-                        <h3 class="display-3 mb-responsive">Dr. Rajesh Kumar</h3>
-                        <p class="mb-responsive" style="color: var(--color-gold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-medium);">Head of Physics Department</p>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="mb-responsive">
-                            Ph.D. in Quantum Physics from IISc Bangalore. 15+ years of teaching experience with specialization in Condensed Matter Physics.
-                        </p>
-                        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Research Areas:</strong> Quantum Mechanics, Solid State Physics
-                        </p>
-                    </div>
-                    
-                    <div class="card hover-lift reveal delay-100">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://i.pravatar.cc/400?img=47" alt="Dr. Priya Sharma" class="img-cover aspect-portrait" style="border: var(--border-width) solid var(--color-border);">
+                        <div class="faculty-card-body">
+                            <p class="faculty-role">Head of BCA Department</p>
+                            <h3 class="faculty-name">Prof. Ramesh K</h3>
+                            <p class="faculty-credential">
+                                MCA, Ph.D. in Computer Science. 15+ years of teaching and industry experience.
+                            </p>
+                            <div class="faculty-specialty">
+                                <span>Specialization</span>
+                                <strong>Software Engineering, DBMS</strong>
+                            </div>
                         </div>
-                        <h3 class="display-3 mb-responsive">Dr. Priya Sharma</h3>
-                        <p class="mb-responsive" style="color: var(--color-gold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-medium);">Professor of Chemistry</p>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="mb-responsive">
-                            Ph.D. in Organic Chemistry. Published 20+ research papers in international journals. Expert in Green Chemistry.
-                        </p>
-                        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Research Areas:</strong> Organic Synthesis, Environmental Chemistry
-                        </p>
-                    </div>
+                    </article>
                     
-                    <div class="card hover-lift reveal delay-200">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://i.pravatar.cc/400?img=68" alt="Prof. Anil Desai" class="img-cover aspect-portrait" style="border: var(--border-width) solid var(--color-border);">
+                    <article class="faculty-card reveal delay-100">
+                        <div class="faculty-card-media">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop" alt="Prof. Anjali D" class="img-cover">
+                            <span class="faculty-card-number">02</span>
                         </div>
-                        <h3 class="display-3 mb-responsive">Prof. Anil Desai</h3>
-                        <p class="mb-responsive" style="color: var(--color-gold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-medium);">Associate Professor - Mathematics</p>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="mb-responsive">
-                            M.Sc., M.Phil. in Applied Mathematics. 12 years of teaching experience with focus on Calculus and Linear Algebra.
-                        </p>
-                        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Specialization:</strong> Applied Mathematics, Statistics
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        
-        <!-- Commerce Faculty -->
-        <section class="section-lg">
-            <div class="container">
-                <div class="section-header text-center container-narrow">
-                    <span class="section-label reveal">Business & Finance</span>
-                    <h2 class="section-title reveal delay-100">Faculty of Commerce</h2>
-                    <div class="divider reveal delay-200"></div>
-                </div>
-                
-                <div class="grid grid-smart mt-responsive">
-                    
-                    <div class="card hover-lift reveal">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://i.pravatar.cc/400?img=52" alt="Dr. Meena Kulkarni" class="img-cover aspect-portrait" style="border: var(--border-width) solid var(--color-border);">
+                        <div class="faculty-card-body">
+                            <p class="faculty-role">Assistant Professor</p>
+                            <h3 class="faculty-name">Prof. Anjali D</h3>
+                            <p class="faculty-credential">
+                                M.Tech in Computer Science. Expertise in modern web technologies and frontend frameworks.
+                            </p>
+                            <div class="faculty-specialty">
+                                <span>Specialization</span>
+                                <strong>Web Development, Programming Logic</strong>
+                            </div>
                         </div>
-                        <h3 class="display-3 mb-responsive">Dr. Meena Kulkarni</h3>
-                        <p class="mb-responsive" style="color: var(--color-gold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-medium);">Head of Commerce Department</p>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="mb-responsive">
-                            Ph.D. in Commerce, CA qualified. 18 years of academic and professional experience in Accounting and Finance.
-                        </p>
-                        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Specialization:</strong> Financial Accounting, Taxation
-                        </p>
-                    </div>
+                    </article>
                     
-                    <div class="card hover-lift reveal delay-100">
-                        <div class="image-zoom mb-responsive">
-                            <img src="https://i.pravatar.cc/400?img=59" alt="Prof. Vijay Naik" class="img-cover aspect-portrait" style="border: var(--border-width) solid var(--color-border);">
+                    <article class="faculty-card reveal delay-200">
+                        <div class="faculty-card-media">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=1000&fit=crop" alt="Prof. Suresh M" class="img-cover">
+                            <span class="faculty-card-number">03</span>
                         </div>
-                        <h3 class="display-3 mb-responsive">Prof. Vijay Naik</h3>
-                        <p class="mb-responsive" style="color: var(--color-gold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-wider); font-weight: var(--font-medium);">Professor of Economics</p>
-                        <div class="divider divider-left" style="margin-bottom: var(--s-md);"></div>
-                        <p class="mb-responsive">
-                            M.Com, M.Phil. in Economics. Expert in Microeconomics and Business Economics with 14 years of teaching experience.
-                        </p>
-                        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
-                            <strong>Specialization:</strong> Business Economics, Banking
-                        </p>
-                    </div>
+                        <div class="faculty-card-body">
+                            <p class="faculty-role">Assistant Professor</p>
+                            <h3 class="faculty-name">Prof. Suresh M</h3>
+                            <p class="faculty-credential">
+                                MCA. Specialist in Object-Oriented Programming and Data Structures.
+                            </p>
+                            <div class="faculty-specialty">
+                                <span>Specialization</span>
+                                <strong>Java, C++, Data Structures</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faculty-card reveal delay-300">
+                        <div class="faculty-card-media">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=800&h=1000&fit=crop" alt="Prof. Kavitha S" class="img-cover">
+                            <span class="faculty-card-number">04</span>
+                        </div>
+                        <div class="faculty-card-body">
+                            <p class="faculty-role">Assistant Professor</p>
+                            <h3 class="faculty-name">Prof. Kavitha S</h3>
+                            <p class="faculty-credential">
+                                M.Sc IT. Deep knowledge in network architectures and cyber security paradigms.
+                            </p>
+                            <div class="faculty-specialty">
+                                <span>Specialization</span>
+                                <strong>Cyber Security, Networking</strong>
+                            </div>
+                        </div>
+                    </article>
                     
                 </div>
             </div>
@@ -218,12 +202,12 @@
     <!-- Footer -->
     <footer class="section" style="background-color: var(--color-navy); color: var(--color-text-light);">
         <div class="container">
-            <div class="grid grid-cols-1 grid-cols-2-md grid-cols-4-lg gap-lg">
+            <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">Bipin Chikkatti College</div>
-                    <div class="footer-tagline">A Legacy of Excellence</div>
+                    <div class="footer-brand">Bipin Chikkatti Degree College</div>
+                    <div class="footer-tagline">Excellence in Computer Applications</div>
                     <p style="color: rgba(255, 255, 255, 0.6);">
-                        Cultivating minds and shaping futures since 1994. Located on a 7-acre lush green campus in Gadag, Karnataka.
+                        Shaping IT professionals since 2019. Affiliated to Karnatak University, Dharwad. Approved by AICTE, New Delhi.
                     </p>
                 </div>
                 
@@ -231,7 +215,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <div class="footer-links">
                         <a href="about.html" class="footer-link">About Us</a>
-                        <a href="courses.html" class="footer-link">Academics</a>
+                        <a href="academics.html" class="footer-link">Academics</a>
                         <a href="admissions.html" class="footer-link">Admissions</a>
                         <a href="faculty.html" class="footer-link">Faculty</a>
                     </div>
@@ -240,27 +224,27 @@
                 <div>
                     <h4 class="footer-title">Resources</h4>
                     <div class="footer-links">
-                        <a href="campus.html" class="footer-link">Campus</a>
-                        <a href="placements.html" class="footer-link">Placements</a>
-                        <a href="events.html" class="footer-link">Events</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="facilities.html" class="footer-link">Facilities</a>
+                        <a href="disclosure.html" class="footer-link">Mandatory Public Disclosure</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
                     </div>
                 </div>
                 
                 <div>
                     <h4 class="footer-title">Contact</h4>
                     <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-sm);">
-                        Mundargi Road, Near Adavi Somapur<br>
-                        Mulgund Naka, Gadag - 582103<br>
+                        Mundargi Road,<br>
+                        Gadag<br>
                         Karnataka, India
                     </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: +91 94480 07467</p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkattigoi@gmail.com</p>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: var(--s-xs);">Phone: 9113887715, 9448007467</p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Email: chikkatticollege@gmail.com</p>
                 </div>
             </div>
             
             <div class="footer-bottom" style="margin-top: var(--s-xl); padding-top: var(--s-md);">
-                <p>© 2024 Bipin Chikkatti College. All rights reserved.</p>
+                <p>© 2026 Bipin Chikkatti Degree College. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -271,7 +255,7 @@
         </svg>
     </button>
     
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260515"></script>
     
 </body>
 </html>
